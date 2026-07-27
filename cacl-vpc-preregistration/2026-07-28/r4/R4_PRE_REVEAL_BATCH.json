@@ -1,0 +1,16 @@
+{
+  "registered_denominator": [
+    75,
+    327,
+    572
+  ],
+  "routes": {
+    "327": "ACT",
+    "572": "ABSTAIN",
+    "75": "ACT"
+  },
+  "schema": "cacl-oc-r4-pre-reveal-batch-v1",
+  "source_act_count": 2,
+  "status": "R4_PRE_REVEAL_ROUTES_FROZEN",
+  "target_outcomes_opened": false
+}
