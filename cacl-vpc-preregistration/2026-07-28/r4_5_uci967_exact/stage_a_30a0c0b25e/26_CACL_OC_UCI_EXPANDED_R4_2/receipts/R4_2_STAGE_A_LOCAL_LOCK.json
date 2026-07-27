@@ -1,0 +1,79 @@
+{
+  "files": {
+    "26_CACL_OC_UCI_EXPANDED_R4_2/R4_2_PROTOCOL.md": {
+      "bytes": 9636,
+      "sha256": "2786e9eed6a52674d4fcbdc0691101b8db1087785f16e88321d56430b4556f1e"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/R4_2_STAGE_A_REGISTRATION.md": {
+      "bytes": 3106,
+      "sha256": "e1a28a15f41ef589390b8b4b8eea2003ef8488d710168222acadb0913408c879"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/audit_r4_2_final.py": {
+      "bytes": 74875,
+      "sha256": "83d51466ff7ea6074b679bf6887644a088225d74fce4340769b3558f19571d51"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/cacl_oc_engine.py": {
+      "bytes": 44841,
+      "sha256": "0310680725b76432fe8e171c101e2071c5465cda4db4616497cc771f07d939bb"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/create_r4_2_public_ack.py": {
+      "bytes": 7033,
+      "sha256": "fb3abfd074fbfa721b9ce0dd907f9931078e3057448741392dbbb18bb469296a"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/freeze_r4_2_lock.py": {
+      "bytes": 6081,
+      "sha256": "6f2a72d8ea89b61f6f9621a6b3f3da92596b70c44902f246ea60d77b0cc98db1"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/freeze_r4_2_stage_a_lock.py": {
+      "bytes": 1723,
+      "sha256": "c91f86fe4427ca7ad5e1c122e5851b353b96fe63195cea39e54d922016fbac9e"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/integrity.py": {
+      "bytes": 21107,
+      "sha256": "955be4e0bcb1e00b6046ac36ffc711efcea3454ebebe5836fc54a0f494310cae"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/prepare_r4_2_new_data.py": {
+      "bytes": 15215,
+      "sha256": "f888467d04a2f30f7640e5bab9b332b15bcc0d727106d5df15b044dd4f157fbe"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/verify_r4_2_stage_a_timestamp.py": {
+      "bytes": 984,
+      "sha256": "379c0044a188d5af501b4211089fb9b187078fb900a0d6d9bcd1df715e5a28c1"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/verify_r4_2_timestamp.py": {
+      "bytes": 1278,
+      "sha256": "e8d10ccf1d2f0c1b67269021629776caf12d22f1ea38fd0b5edc9cfecf006ab4"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/config/r4_2_contract.json": {
+      "bytes": 2387,
+      "sha256": "2dfebbab6f8881a5b1c13c36dc705e3df0b1d1faf758df1a930f9418b7e7eacd"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/requirements-lock.txt": {
+      "bytes": 92,
+      "sha256": "7bb981c905872b33ef14b2321acb798ed06f65e3accd80f5afcdc0929f6b1043"
+    }
+  },
+  "new_data_downloaded": false,
+  "new_registered_ids": [
+    855,
+    967
+  ],
+  "public_text_paths": [
+    "26_CACL_OC_UCI_EXPANDED_R4_2/R4_2_STAGE_A_REGISTRATION.md",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/R4_2_PROTOCOL.md",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/requirements-lock.txt",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/config/r4_2_contract.json",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/integrity.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/prepare_r4_2_new_data.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/freeze_r4_2_stage_a_lock.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/verify_r4_2_stage_a_timestamp.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/create_r4_2_public_ack.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/cacl_oc_engine.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/freeze_r4_2_lock.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/verify_r4_2_timestamp.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/code/audit_r4_2_final.py",
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_LOCAL_LOCK.json"
+  ],
+  "schema": "cacl-oc-r4.2-stage-a-local-lock-v1",
+  "status": "R4_2_STAGE_A_LOCKED_BEFORE_NEW_DATA_ACCESS"
+}
