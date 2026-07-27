@@ -1,0 +1,14 @@
+{
+  "schema": "cacl-oc-r4.4-prior-access-audit-v1-invalidation-v1",
+  "status": "R4_4_PRIOR_ACCESS_AUDIT_V1_INVALIDATED_BEFORE_STAGE_A",
+  "invalidated_receipt": "28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_PRIOR_ACCESS_AUDIT.json",
+  "invalidated_receipt_bytes": 4674,
+  "invalidated_receipt_sha256": "c81042edeb791f74eadc932c066394cdd399c7e54c8e6066820589c6051fda22",
+  "failure_class": "filename_only_workspace_scan",
+  "failure_detail": "V1 searched candidate IDs only in each basename and could miss normal nested artifacts such as uci_967/source.npz.",
+  "instance_endpoint_opened_before_invalidation": false,
+  "instance_data_read_before_invalidation": false,
+  "stage_a_lock_created_before_invalidation": false,
+  "v1_scientific_evidence_permitted": false,
+  "repair_scope": "replace basename search with full package-relative-path search and issue a new write-once V2 receipt; preserve V1"
+}
