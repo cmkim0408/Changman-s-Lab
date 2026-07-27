@@ -1,0 +1,19 @@
+{
+  "schema": "cacl-oc-r4.2-stage-a-transport-invalidation-v1",
+  "status": "R4_2_INVALIDATED_BEFORE_INSTANCE_DATA_ACCESS",
+  "invalidated_utc": "2026-07-27T22:21:16.7234299Z",
+  "public_stage_a_commit": "583e45ec554d04fa21962bd1cd79922f2c0bfa47",
+  "stage_a_lock_sha256": "d9a6a4190ca18ade2602b2b701b480e98279d1d05921d19710534827de7d8fc6",
+  "failure_class": "transport_implementation",
+  "dataset_id": 855,
+  "dependency": "ucimlrepo==0.0.7",
+  "error": "DatasetNotFoundError: official dataset exists but standardized data_url is null",
+  "instance_data_read_reached": false,
+  "prepared_census_created": false,
+  "registered_census_created": false,
+  "scientific_model_fitted": false,
+  "source_route_computed": false,
+  "target_outcome_semantically_decoded": false,
+  "repair_scope_permitted": "official UCI 855 archive transport only",
+  "r4_2_scientific_result_permitted": false
+}
