@@ -1,0 +1,574 @@
+{
+  "data": {
+    "abstract": "PhiUSIIL Phishing URL Dataset is a substantial dataset comprising 134,850 legitimate and 100,945 phishing URLs. Most of the URLs we analyzed, while constructing the dataset, are the latest URLs. Features are extracted from the source code of the webpage and URL. Features such as CharContinuationRate, URLTitleMatchScore, URLCharProb, and TLDLegitimateProb are derived from existing features.",
+    "additional_info": {
+      "citation": "Prasad, A., & Chandra, S. (2023). PhiUSIIL: A diverse security profile empowered phishing URL detection framework based on similarity index and incremental learning. Computers & Security, 103545. doi: https://doi.org/10.1016/j.cose.2023.103545",
+      "funded_by": null,
+      "instances_represent": "URLs and their corresponding webpages",
+      "preprocessing_description": null,
+      "purpose": null,
+      "recommended_data_splits": null,
+      "sensitive_data": null,
+      "summary": null,
+      "variable_info": "Column \"FILENAME\" can be ignored."
+    },
+    "area": "Computer Science",
+    "characteristics": [
+      "Tabular"
+    ],
+    "creators": [
+      "Arvind Prasad",
+      "Shalini Chandra"
+    ],
+    "data_url": "https://archive.ics.uci.edu/static/public/967/data.csv",
+    "dataset_doi": "https://doi.org/10.1016/j.cose.2023.103545",
+    "demographics": [],
+    "feature_types": [
+      "Real",
+      "Categorical",
+      "Integer"
+    ],
+    "has_missing_values": "no",
+    "index_col": null,
+    "intro_paper": {
+      "DOI": null,
+      "ID": 411,
+      "URL": "https://doi.org/10.1016/j.cose.2023.103545",
+      "acl": null,
+      "arxiv": null,
+      "authors": "Arvind Prasad and Shalini Chandra",
+      "corpus": null,
+      "journal": null,
+      "mag": null,
+      "pmcid": null,
+      "pmid": null,
+      "sha": null,
+      "title": "PhiUSIIL: A diverse security profile empowered phishing URL detection framework based on similarity index and incremental learning",
+      "type": "NATIVE",
+      "venue": "Computers & Security",
+      "year": 2024
+    },
+    "last_updated": "Sun May 12 2024",
+    "missing_values_symbol": null,
+    "name": "PhiUSIIL Phishing URL (Website)",
+    "num_features": 54,
+    "num_instances": 235795,
+    "repository_url": "https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset",
+    "target_col": [
+      "label"
+    ],
+    "tasks": [
+      "Classification"
+    ],
+    "uci_id": 967,
+    "variables": [
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "FILENAME",
+        "role": "Other",
+        "type": "Categorical",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "URL",
+        "role": "Feature",
+        "type": "Categorical",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "URLLength",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "Domain",
+        "role": "Feature",
+        "type": "Categorical",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "DomainLength",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "IsDomainIP",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "TLD",
+        "role": "Feature",
+        "type": "Categorical",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "URLSimilarityIndex",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "CharContinuationRate",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "TLDLegitimateProb",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "URLCharProb",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "TLDLength",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfSubDomain",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasObfuscation",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfObfuscatedChar",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "ObfuscationRatio",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfLettersInURL",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "LetterRatioInURL",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfDegitsInURL",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "DegitRatioInURL",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfEqualsInURL",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfQMarkInURL",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfAmpersandInURL",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfOtherSpecialCharsInURL",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "SpacialCharRatioInURL",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "IsHTTPS",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "LineOfCode",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "LargestLineLength",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasTitle",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "Title",
+        "role": "Feature",
+        "type": "Categorical",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "DomainTitleMatchScore",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "URLTitleMatchScore",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasFavicon",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "Robots",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "IsResponsive",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfURLRedirect",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfSelfRedirect",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasDescription",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfPopup",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfiFrame",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasExternalFormSubmit",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasSocialNet",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasSubmitButton",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasHiddenFields",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasPasswordField",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "Bank",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "Pay",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "Crypto",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "HasCopyrightInfo",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfImage",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfCSS",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfJS",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfSelfRef",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfEmptyRef",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "NoOfExternalRef",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "label",
+        "role": "Target",
+        "type": "Integer",
+        "units": null
+      }
+    ],
+    "year_of_dataset_creation": 2024
+  },
+  "status": 200,
+  "statusText": "OK"
+}
