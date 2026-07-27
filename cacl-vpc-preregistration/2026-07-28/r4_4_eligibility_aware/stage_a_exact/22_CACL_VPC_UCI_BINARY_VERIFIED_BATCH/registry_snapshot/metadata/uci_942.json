@@ -1,0 +1,840 @@
+{
+  "data": {
+    "abstract": "The RT-IoT2022, a proprietary dataset derived from a real-time IoT infrastructure, is introduced as a comprehensive resource integrating a diverse range of IoT devices and sophisticated network attack methodologies. This dataset encompasses both normal and adversarial network behaviours, providing a general representation of real-world scenarios.\nIncorporating data from IoT devices such as ThingSpeak-LED, Wipro-Bulb, and MQTT-Temp, as well as simulated attack scenarios involving Brute-Force SSH attacks, DDoS attacks using Hping and Slowloris, and Nmap patterns, RT-IoT2022 offers a detailed perspective on the complex nature of network traffic. The bidirectional attributes of network traffic are meticulously captured using the Zeek network monitoring tool and the Flowmeter plugin. Researchers can leverage the RT-IoT2022 dataset to advance the capabilities of Intrusion Detection Systems (IDS), fostering the development of robust and adaptive security solutions for real-time IoT networks. ",
+    "additional_info": {
+      "citation": null,
+      "funded_by": null,
+      "instances_represent": null,
+      "preprocessing_description": null,
+      "purpose": null,
+      "recommended_data_splits": null,
+      "sensitive_data": null,
+      "summary": null,
+      "variable_info": "Column Details:\nid.orig_p\nid.resp_p\nproto\nservice\nflow_duration\nfwd_pkts_tot\nbwd_pkts_tot\nfwd_data_pkts_tot\nbwd_data_pkts_tot\nfwd_pkts_per_sec\nbwd_pkts_per_sec\nflow_pkts_per_sec\ndown_up_ratio\nfwd_header_size_tot\nfwd_header_size_min\nfwd_header_size_max\nbwd_header_size_tot\nbwd_header_size_min\nbwd_header_size_max\nflow_FIN_flag_count\nflow_SYN_flag_count\nflow_RST_flag_count\nfwd_PSH_flag_count\nbwd_PSH_flag_count\nflow_ACK_flag_count\nfwd_URG_flag_count\nbwd_URG_flag_count\nflow_CWR_flag_count\nflow_ECE_flag_count\nfwd_pkts_payload.min\nfwd_pkts_payload.max\nfwd_pkts_payload.tot\nfwd_pkts_payload.avg\nfwd_pkts_payload.std\nbwd_pkts_payload.min\nbwd_pkts_payload.max\nbwd_pkts_payload.tot\nbwd_pkts_payload.avg\nbwd_pkts_payload.std\nflow_pkts_payload.min\nflow_pkts_payload.max\nflow_pkts_payload.tot\nflow_pkts_payload.avg\nflow_pkts_payload.std\nfwd_iat.min\nfwd_iat.max\nfwd_iat.tot\nfwd_iat.avg\nfwd_iat.std\nbwd_iat.min\nbwd_iat.max\nbwd_iat.tot\nbwd_iat.avg\nbwd_iat.std\nflow_iat.min\nflow_iat.max\nflow_iat.tot\nflow_iat.avg\nflow_iat.std\npayload_bytes_per_second\nfwd_subflow_pkts\nbwd_subflow_pkts\nfwd_subflow_bytes\nbwd_subflow_bytes\nfwd_bulk_bytes\nbwd_bulk_bytes\nfwd_bulk_packets\nbwd_bulk_packets\nfwd_bulk_rate\nbwd_bulk_rate\nactive.min\nactive.max\nactive.tot\nactive.avg\nactive.std\nidle.min\nidle.max\nidle.tot\nidle.avg\nidle.std\nfwd_init_window_size\nbwd_init_window_size\nfwd_last_window_size\nAttack_type"
+    },
+    "area": "Engineering",
+    "characteristics": [
+      "Tabular",
+      "Sequential",
+      "Multivariate"
+    ],
+    "creators": [
+      "B. S.",
+      "Rohini Nagapadma"
+    ],
+    "data_url": "https://archive.ics.uci.edu/static/public/942/data.csv",
+    "dataset_doi": "10.24432/C5P338",
+    "demographics": [],
+    "feature_types": [
+      "Real",
+      "Categorical"
+    ],
+    "has_missing_values": "no",
+    "index_col": [
+      "id"
+    ],
+    "intro_paper": {
+      "DOI": null,
+      "ID": 362,
+      "URL": "https://www.semanticscholar.org/paper/753f6ede01b4acaa325e302c38f1e0c1ade74f5b",
+      "acl": null,
+      "arxiv": null,
+      "authors": "B. S. Sharmila, Rohini Nagapadma",
+      "corpus": null,
+      "journal": null,
+      "mag": null,
+      "pmcid": null,
+      "pmid": null,
+      "sha": null,
+      "title": "Quantized autoencoder (QAE) intrusion detection system for anomaly detection in resource-constrained IoT devices using RT-IoT2022 dataset",
+      "type": "NATIVE",
+      "venue": "Cybersecurity",
+      "year": 2023
+    },
+    "last_updated": "Fri Mar 08 2024",
+    "missing_values_symbol": null,
+    "name": "RT-IoT2022 ",
+    "num_features": 83,
+    "num_instances": 123117,
+    "repository_url": "https://archive.ics.uci.edu/dataset/942/rt-iot2022",
+    "target_col": [
+      "Attack_type"
+    ],
+    "tasks": [
+      "Classification",
+      "Regression",
+      "Clustering"
+    ],
+    "uci_id": 942,
+    "variables": [
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "id.orig_p",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "id.resp_p",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "proto",
+        "role": "Feature",
+        "type": "Categorical",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "service",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_duration",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_pkts_tot",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_pkts_tot",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_data_pkts_tot",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_data_pkts_tot",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_pkts_per_sec",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_pkts_per_sec",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_pkts_per_sec",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "down_up_ratio",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_header_size_tot",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_header_size_min",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_header_size_max",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_header_size_tot",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_header_size_min",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_header_size_max",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_FIN_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_SYN_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_RST_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_PSH_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_PSH_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_ACK_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_URG_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_URG_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_CWR_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_ECE_flag_count",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_pkts_payload.min",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_pkts_payload.max",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_pkts_payload.tot",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_pkts_payload.avg",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_pkts_payload.std",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_pkts_payload.min",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_pkts_payload.max",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_pkts_payload.tot",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_pkts_payload.avg",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_pkts_payload.std",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_pkts_payload.min",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_pkts_payload.max",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_pkts_payload.tot",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_pkts_payload.avg",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_pkts_payload.std",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_iat.min",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_iat.max",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_iat.tot",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_iat.avg",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_iat.std",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_iat.min",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_iat.max",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_iat.tot",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_iat.avg",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_iat.std",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_iat.min",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_iat.max",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_iat.tot",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_iat.avg",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "flow_iat.std",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "payload_bytes_per_second",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_subflow_pkts",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_subflow_pkts",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_subflow_bytes",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_subflow_bytes",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_bulk_bytes",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_bulk_bytes",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_bulk_packets",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_bulk_packets",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_bulk_rate",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_bulk_rate",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "active.min",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "active.max",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "active.tot",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "active.avg",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "active.std",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "idle.min",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "idle.max",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "idle.tot",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "idle.avg",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "idle.std",
+        "role": "Feature",
+        "type": "Continuous",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_init_window_size",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "bwd_init_window_size",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "fwd_last_window_size",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "Attack_type",
+        "role": "Target",
+        "type": "Categorical",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "id",
+        "role": "ID",
+        "type": "Integer",
+        "units": null
+      }
+    ],
+    "year_of_dataset_creation": 2023
+  },
+  "status": 200,
+  "statusText": "OK"
+}
