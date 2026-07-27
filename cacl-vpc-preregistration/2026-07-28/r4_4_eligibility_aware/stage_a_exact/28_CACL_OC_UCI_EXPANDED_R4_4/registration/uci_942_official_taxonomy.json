@@ -1,0 +1,31 @@
+{
+  "schema": "cacl-oc-r4.4-uci942-official-taxonomy-v1",
+  "uci_id": 942,
+  "dataset": "RT-IoT2022",
+  "source_url": "https://archive.ics.uci.edu/dataset/942/rt-iot2022",
+  "source_doi": "10.24432/C5P338",
+  "source_section": "Additional Variable Information / Class Labels",
+  "normal_labels_after_outer_whitespace_trim": [
+    "MQTT",
+    "Thing_speak",
+    "Wipro_bulb_Dataset",
+    "Amazon-Alexa"
+  ],
+  "attack_labels_after_outer_whitespace_trim": [
+    "DOS_SYN_Hping",
+    "ARP_poisioning",
+    "NMAP_UDP_SCAN",
+    "NMAP_XMAS_TREE_SCAN",
+    "NMAP_OS_DETECTION",
+    "NMAP_TCP_scan",
+    "DDOS_Slowloris",
+    "Metasploit_Brute_Force_SSH",
+    "NMAP_FIN_SCAN"
+  ],
+  "binary_encoding": {
+    "normal": 0,
+    "attack": 1
+  },
+  "instance_rows_accessed_to_create_this_registration": false,
+  "class_counts_used_by_the_transform": false
+}
