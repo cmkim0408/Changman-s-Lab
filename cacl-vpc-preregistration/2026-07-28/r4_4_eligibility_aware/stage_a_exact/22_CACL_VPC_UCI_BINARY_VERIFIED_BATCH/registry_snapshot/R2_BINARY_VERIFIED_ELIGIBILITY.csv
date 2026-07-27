@@ -1,0 +1,5 @@
+uci_id,name,fully_eligible,actual_rows,actual_predictors,target_columns,target_cardinality,missing_fraction,reasons
+75,Musk (Version 2),True,6598,166,1,2,0.0,
+107,Waveform Database Generator (Version 1),False,5000,21,1,3,0.0,target_cardinality_not_two
+327,Phishing Websites,True,11055,30,1,2,0.0,
+572,Taiwanese Bankruptcy Prediction,True,6819,95,1,2,0.0,
