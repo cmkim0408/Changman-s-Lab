@@ -1,0 +1,65 @@
+{
+  "files": {
+    "19_CACL_REVIEWER_RESPONSE_ROUND3/closed_batch/EXISTING_DATASET_LEDGER.csv": {
+      "bytes": 10647,
+      "sha256": "c29bde925530683eded70611bbc744d1cbfded5bc94e3c4783cec4ff41dc3504"
+    },
+    "20_CACL_VALUE_PRESERVING_COMPILER/CACL_VPC_ALGORITHM_AND_THEOREMS.md": {
+      "bytes": 6637,
+      "sha256": "8565ee5c157688af4c12cec6b34678c7406dfd610c959ece601296f4e6082bdb"
+    },
+    "20_CACL_VALUE_PRESERVING_COMPILER/code/run_cacl_vpc_development.py": {
+      "bytes": 19744,
+      "sha256": "e50f08b8682aeee6c337744ccce81e0c4e968e2f2c1bd15f8661e779a0890093"
+    },
+    "20_CACL_VALUE_PRESERVING_COMPILER/code/run_full_hgb_universal_control.py": {
+      "bytes": 12982,
+      "sha256": "ffc87a31d094c8742de56cfa77e242354309673ae6c5fdd0b526d880904b2218"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/AUTHOR_TIMESTAMP_CHECKPOINT.md": {
+      "bytes": 839,
+      "sha256": "55e14d0e50eac5fa14a410094f1350cc8be13a680eb3f5ef2c4a450f8ec8e472"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/PRE_REGISTRATION.md": {
+      "bytes": 4078,
+      "sha256": "5c7b4f3cd468bda27d71c3bc3974e86fe024e5cdd5e234c88d156d818d0f6128"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/README.md": {
+      "bytes": 916,
+      "sha256": "2dce1b4787ab2e24cab58d811aaa620140219fbfa6d095ab045af6be75543a5d"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/code/cacl_vpc_uci_engine.py": {
+      "bytes": 18991,
+      "sha256": "01e4308fdfc2c5d51f703896db6ace83806efa881115822a11da03207d3d1d50"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/code/freeze_pre_enumeration.py": {
+      "bytes": 2624,
+      "sha256": "0d3cf67dba31942f138b314844a604a8ff32eb514867ddccc97ea4cad9384d80"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/code/synthetic_engine_test.py": {
+      "bytes": 2785,
+      "sha256": "43afc0d92ebb327eebf1efc2ea480ea2f097b7f0447ceb9c153f231226de97f7"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/config/cacl_vpc_contract.json": {
+      "bytes": 2333,
+      "sha256": "1d02375900ddbd176837d5d3390524c334e99f6cb90e187ddcc32f510c630402"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/config/eligibility_rule.json": {
+      "bytes": 1261,
+      "sha256": "1102c9160a264dd2b76411fa68fb51da18216d2b84997ea86939c6cb65cdd563"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/requirements-lock.txt": {
+      "bytes": 92,
+      "sha256": "7bb981c905872b33ef14b2321acb798ed06f65e3accd80f5afcdc0929f6b1043"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/synthetic_test/TEST_RECEIPT.json": {
+      "bytes": 339,
+      "sha256": "e322105031b51247b85549f5c3f7f69964a35ba0b42a2b4e66e6c87364f7197c"
+    }
+  },
+  "next_required_action": "Publish this receipt and the protocol/config files at an externally dated public location, then add and verify EXTERNAL_TIMESTAMP_ACK.json.",
+  "phase2_registry_enumeration_permitted": false,
+  "registry_queries_run_by_this_script": 0,
+  "schema": "cacl-vpc-local-pre-enumeration-lock-v1",
+  "status": "LOCAL_LOCKED_PENDING_EXTERNAL_TIMESTAMP"
+}
