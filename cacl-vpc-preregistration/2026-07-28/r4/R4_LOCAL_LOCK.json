@@ -1,0 +1,81 @@
+{
+  "files": {
+    "23_CACL_VPC_UCI_CENSUS_BATCH/receipts/R3_SOURCE_STOP_AUDIT.json": {
+      "bytes": 4221,
+      "sha256": "374a410c55f7ed6566c4e4a9f55a91368bcea8e77accbaf22f7c517fe36c862e"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/R4_PROTOCOL.md": {
+      "bytes": 4344,
+      "sha256": "dfeb9d6ddb352062a09891a34fef823082f352752b318cc0485cc46c7f3980c0"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/code/cacl_oc_engine.py": {
+      "bytes": 22951,
+      "sha256": "b09f44a2ba8e23e4d77acc40720722ad35ebcf2926d0f852a7416b999d20187b"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/code/freeze_r4_lock.py": {
+      "bytes": 2091,
+      "sha256": "de145a1a0417a11633bdb069ad3aa6a554b754c0f5978e93bc5dccc3c29bc8d1"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/config/r4_contract.json": {
+      "bytes": 913,
+      "sha256": "690f088120a615a72dbb74a9d91ca39254923c926047279f6539471a886cf2a0"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/receipts/R4_PRE_REVEAL_BATCH.json": {
+      "bytes": 303,
+      "sha256": "1939896668870c22d6216de544ca02b03ce709d82460759a245cff1eab70d6d0"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_327/FROZEN_POLICY.joblib": {
+      "bytes": 3234,
+      "sha256": "7fae10218098166708814c30b203c168a387b36c13221f3ec2c1fa4199f15a63"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_327/SEALED_TARGET_ACTIONS.npz": {
+      "bytes": 12845,
+      "sha256": "0db5f804d4dcfdcc1b127a16ca7a3b3bc74691d74fc186aa63dc6d74e692ee59"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_327/SOURCE_FREEZE_RECEIPT.json": {
+      "bytes": 3911,
+      "sha256": "bac43fbb7ad9b4f1693dbac7a8449e56861473108eecea549fec3ff21ecd9b5a"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_572/FROZEN_POLICY.joblib": {
+      "bytes": 2461,
+      "sha256": "25267ec6383dcaf98443c99adca6a1e36c7fdab1d24436117a5e027435b59aef"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_572/SEALED_TARGET_ACTIONS.npz": {
+      "bytes": 6693,
+      "sha256": "c7bfdfa5309e7608570e1dac2e96c768e94e2a90d10a66a1e502cd22bcc08054"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_572/SOURCE_FREEZE_RECEIPT.json": {
+      "bytes": 3603,
+      "sha256": "474e662181d25ca253ad4d8b1f6ad2490ef2c80f6f9e3e72e5d91a33328515c4"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_75/FROZEN_POLICY.joblib": {
+      "bytes": 5255,
+      "sha256": "4c6d65c813ae9abb3c6123fbc5d1177455e3b2baa356063add96aa394fd363b3"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_75/SEALED_TARGET_ACTIONS.npz": {
+      "bytes": 8271,
+      "sha256": "4d414c975e1df1e7a93ff5f40bde006e052cc9598c5b70c3d3ec2941898ca2e0"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/registered_census/uci_75/SOURCE_FREEZE_RECEIPT.json": {
+      "bytes": 3922,
+      "sha256": "e47c4c326b1d7cb7f4198df72a99c1a20af84c67984970447d4e3d905deb5f00"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/requirements-lock.txt": {
+      "bytes": 92,
+      "sha256": "7bb981c905872b33ef14b2321acb798ed06f65e3accd80f5afcdc0929f6b1043"
+    }
+  },
+  "registered_ids": [
+    75,
+    327,
+    572
+  ],
+  "schema": "cacl-oc-r4-local-lock-v1",
+  "source_routes": {
+    "327": "ACT",
+    "572": "ABSTAIN",
+    "75": "ACT"
+  },
+  "status": "R4_LOCKED_PENDING_EXTERNAL_TIMESTAMP",
+  "target_outcome_reveal_permitted": false
+}
