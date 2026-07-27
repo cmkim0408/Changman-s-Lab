@@ -1,0 +1,61 @@
+{
+  "schema": "cacl-oc-uci-r4.2-contract-v1",
+  "registered_ids": [75, 327, 572, 855, 967],
+  "inferential_ids": [327, 572, 855, 967],
+  "descriptive_ids": [75],
+  "dataset_roles": {
+    "75": "DESCRIPTIVE_CLUSTERED_CONFORMATION_REPLAY",
+    "327": "INFERENTIAL_REGISTERED_UNIT",
+    "572": "INFERENTIAL_REGISTERED_UNIT",
+    "855": "INFERENTIAL_NEW_PRE_INSTANCE_DATA_REGISTRATION",
+    "967": "INFERENTIAL_NEW_PRE_INSTANCE_DATA_REGISTRATION"
+  },
+  "selection": "R2 census retained plus pre-instance-data UCI 855 and 967",
+  "new_data_registration": {
+    "855": {
+      "raw_rows": 4464,
+      "raw_features": 241,
+      "primary_features": 241,
+      "registered_row_cap": 4464,
+      "group_rule": "exact_primary_feature_signature",
+      "raw_feature_name_sha256": "024ca7f02a42988fd35bb8154d10dd1e1315089cb0d77361bcda7b9164e0d4d8",
+      "primary_feature_name_sha256": "024ca7f02a42988fd35bb8154d10dd1e1315089cb0d77361bcda7b9164e0d4d8"
+    },
+    "967": {
+      "raw_rows": 235795,
+      "raw_features": 54,
+      "primary_features": 46,
+      "registered_row_cap": 100000,
+      "group_rule": "normalized_domain",
+      "raw_feature_name_sha256": "8f2b32b72319d66b4d42225a0d7279269ee0b0e73592886446012ca4594f9866",
+      "primary_feature_name_sha256": "54250825298c88f28c5f24430288afa85ac2ab4cf21f630848217a34ae5fedc4"
+    }
+  },
+  "source_target_group_split": [0.65, 0.35],
+  "certificate_unit": "one deterministic label-blind row per registered group",
+  "representative_rule": "minimum SHA-256 of split salt, side, group ID and row ID",
+  "source_split": [0.5, 0.2, 0.3],
+  "split_salt": "CACL-OC-UCI-TRAIN-CAL-AUDIT-v1",
+  "tree_depths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "minimum_leaf_sizes": [10, 30, 60],
+  "criterion": "log_loss",
+  "class_weight": "balanced",
+  "threshold_grid": [
+    0.5, 0.525, 0.55, 0.575, 0.6, 0.625, 0.65, 0.675, 0.7,
+    0.725, 0.75, 0.775, 0.8, 0.825, 0.85, 0.875, 0.9,
+    0.91, 0.92, 0.93, 0.94, 0.95, 0.96, 0.97, 0.98, 0.99,
+    0.995, 0.999
+  ],
+  "source_alpha": 0.00125,
+  "target_alpha": 0.00125,
+  "selection_harm_ucb_cap": 0.15,
+  "scientific_harm_ucb_cap": 0.2,
+  "opportunity_recall_lcb_floor": 0.2,
+  "average_compression_floor": 8.0,
+  "minimum_source_act": 2,
+  "minimum_new_source_act": 1,
+  "minimum_target_act_pass": 2,
+  "minimum_new_target_act_pass": 1,
+  "direct_path_action_agreement": 1.0,
+  "replacement": false
+}
