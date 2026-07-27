@@ -1,0 +1,21 @@
+{
+  "schema": "cacl-vpc-uci-r2-eligibility-v1",
+  "status": "LOCK_CANDIDATE_PENDING_EXTERNAL_TIMESTAMP",
+  "registry": "UCI_ONLY",
+  "minimum_rows": 4000,
+  "maximum_rows": 100000,
+  "minimum_numeric_predictors": 20,
+  "maximum_numeric_predictors": 500,
+  "outcome": "exactly one target column with exactly two observed non-missing labels",
+  "predictor_types": "all original predictors numerically convertible",
+  "maximum_overall_missing_fraction": 0.2,
+  "table_rule": "classification multivariate table; no temporal, grouped, image, text, graph, sequential, or multi-table task",
+  "exclusion": "original project ledger plus all Batch-1 registered IDs and normalized titles",
+  "eligibility_output_guard": "cardinality and schema only; no class proportions, associations, per-row values, or performance",
+  "selection": {
+    "implementation": "random.Random(2302001).sample(sorted(fully_verified_pool), 4)",
+    "batch_size": 4,
+    "seed": 2302001,
+    "replacement": false
+  }
+}
