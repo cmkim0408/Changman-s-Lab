@@ -1,0 +1,21 @@
+{
+  "schema": "cacl-vpc-uci-r2-contract-v1",
+  "status": "LOCK_CANDIDATE_PENDING_EXTERNAL_TIMESTAMP",
+  "algorithm": "CACL-VPC",
+  "value_fraction_beta": 0.9,
+  "familywise_alpha": 0.025,
+  "candidate_budgets": [2, 4, 8],
+  "harm_ucb_cap": 0.2,
+  "coverage_lcb_floor": 0.2,
+  "average_compression_floor": 8.0,
+  "candidate_model_random_state": 2301002,
+  "feature_ranking_random_state": 2301003,
+  "source_fraction": 0.65,
+  "source_design_fraction": 0.7,
+  "terminal_states": ["COMPRESS", "FULL", "ABSTAIN", "EXTERNAL_FAIL"],
+  "minimum_source_authorized_compress_datasets": 2,
+  "minimum_untouched_target_value_retention_passes": 2,
+  "compiled_parent_action_agreement": 1.0,
+  "registered_denominator": 4,
+  "thresholds_changed_from_batch1": false
+}
