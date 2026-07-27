@@ -1,0 +1,282 @@
+{
+  "data": {
+    "abstract": "The Diabetes Health Indicators Dataset contains healthcare statistics and lifestyle survey information about people in general along with their diagnosis of diabetes. The 35 features consist of some demographics, lab test results, and answers to survey questions for each patient. The target variable for classification is whether a patient has diabetes, is pre-diabetic, or healthy. ",
+    "additional_info": {
+      "citation": null,
+      "funded_by": "The CDC",
+      "instances_represent": "Each row represents a person participating in this study.",
+      "preprocessing_description": "Bucketing of age",
+      "purpose": "To better understand the relationship between  lifestyle and diabetes in the US",
+      "recommended_data_splits": "Cross validation or a fixed train-test split could be used.",
+      "sensitive_data": "- Gender\n- Income\n- Education level",
+      "summary": "Dataset link: https://www.cdc.gov/brfss/annual_data/annual_2014.html",
+      "variable_info": "- Diabetes diagnosis\n- Demographics (race, sex)\n- Personal information (income, educations)\n- Health history (drinking, smoking, mental health, physical health)"
+    },
+    "area": "Health and Medicine",
+    "characteristics": [
+      "Tabular",
+      "Multivariate"
+    ],
+    "creators": [],
+    "data_url": "https://archive.ics.uci.edu/static/public/891/data.csv",
+    "dataset_doi": "10.24432/C53919",
+    "demographics": [
+      "Sex",
+      "Age",
+      "Education Level",
+      "Income"
+    ],
+    "external_url": "https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset",
+    "feature_types": [
+      "Categorical",
+      "Integer"
+    ],
+    "has_missing_values": "no",
+    "index_col": [
+      "ID"
+    ],
+    "intro_paper": {
+      "DOI": null,
+      "ID": 308,
+      "URL": "https://www.cdc.gov/mmwr/volumes/66/wr/mm6643a2.htm",
+      "acl": null,
+      "arxiv": null,
+      "authors": "Nilka Rios Burrows, MPH; Israel Hora, PhD; Linda S. Geiss, MA; Edward W. Gregg, PhD; Ann Albright, PhD",
+      "corpus": null,
+      "journal": null,
+      "mag": null,
+      "pmcid": null,
+      "pmid": null,
+      "sha": null,
+      "title": "Incidence of End-Stage Renal Disease Attributed to Diabetes Among Persons with Diagnosed Diabetes \u2014 United States and Puerto Rico, 2000\u20132014",
+      "type": "NATIVE",
+      "venue": "Morbidity and Mortality Weekly Report",
+      "year": 2017
+    },
+    "last_updated": "Fri Nov 03 2023",
+    "missing_values_symbol": null,
+    "name": "CDC Diabetes Health Indicators",
+    "num_features": 21,
+    "num_instances": 253680,
+    "repository_url": "https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators",
+    "target_col": [
+      "Diabetes_binary"
+    ],
+    "tasks": [
+      "Classification"
+    ],
+    "uci_id": 891,
+    "variables": [
+      {
+        "demographic": null,
+        "description": "Patient ID",
+        "missing_values": "no",
+        "name": "ID",
+        "role": "ID",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "0 = no diabetes 1 = prediabetes or diabetes",
+        "missing_values": "no",
+        "name": "Diabetes_binary",
+        "role": "Target",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "0 = no high BP 1 = high BP",
+        "missing_values": "no",
+        "name": "HighBP",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "0 = no high cholesterol 1 = high cholesterol",
+        "missing_values": "no",
+        "name": "HighChol",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "0 = no cholesterol check in 5 years 1 = yes cholesterol check in 5 years",
+        "missing_values": "no",
+        "name": "CholCheck",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Body Mass Index",
+        "missing_values": "no",
+        "name": "BMI",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes] 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "Smoker",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "(Ever told) you had a stroke. 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "Stroke",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "coronary heart disease (CHD) or myocardial infarction (MI) 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "HeartDiseaseorAttack",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "physical activity in past 30 days - not including job 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "PhysActivity",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Consume Fruit 1 or more times per day 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "Fruits",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Consume Vegetables 1 or more times per day 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "Veggies",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week) 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "HvyAlcoholConsump",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Have any kind of health care coverage, including health insurance, prepaid plans such as HMO, etc. 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "AnyHealthcare",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "NoDocbcCost",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Would you say that in general your health is: scale 1-5 1 = excellent 2 = very good 3 = good 4 = fair 5 = poor",
+        "missing_values": "no",
+        "name": "GenHlth",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good? scale 1-30 days",
+        "missing_values": "no",
+        "name": "MentHlth",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? scale 1-30 days",
+        "missing_values": "no",
+        "name": "PhysHlth",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": "Do you have serious difficulty walking or climbing stairs? 0 = no 1 = yes",
+        "missing_values": "no",
+        "name": "DiffWalk",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": "Sex",
+        "description": "0 = female 1 = male",
+        "missing_values": "no",
+        "name": "Sex",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": "Age",
+        "description": "13-level age category (_AGEG5YR see codebook) 1 = 18-24 9 = 60-64 13 = 80 or older",
+        "missing_values": "no",
+        "name": "Age",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": "Education Level",
+        "description": "Education level (EDUCA see codebook) scale 1-6 1 = Never attended school or only kindergarten 2 = Grades 1 through 8 (Elementary) 3 = Grades 9 through 11 (Some high school) 4 = Grade 12 or GED (High school graduate) 5 = College 1 year to 3 years (Some college or technical school) 6 = College 4 years or more (College graduate)",
+        "missing_values": "no",
+        "name": "Education",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": "Income",
+        "description": "Income scale (INCOME2 see codebook) scale 1-8 1 = less than $10,000 5 = less than $35,000 8 = $75,000 or more",
+        "missing_values": "no",
+        "name": "Income",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      }
+    ],
+    "year_of_dataset_creation": 2017
+  },
+  "status": 200,
+  "statusText": "OK"
+}
