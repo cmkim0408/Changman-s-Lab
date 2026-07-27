@@ -1,0 +1,48 @@
+{
+  "files": {
+    "21_CACL_VPC_UCI_CLOSED_BATCH/code/cacl_vpc_uci_engine.py": {
+      "bytes": 18991,
+      "sha256": "01e4308fdfc2c5d51f703896db6ace83806efa881115822a11da03207d3d1d50"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/receipts/BATCH1_FINAL_AUDIT.json": {
+      "bytes": 1839,
+      "sha256": "3a5f8642dcd9ff35fa555511b3dced01fff93b894254782d1a701a7a1aa9517f"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/receipts/R2_SELECTION_RECEIPT.json": {
+      "bytes": 1302,
+      "sha256": "63eb35dec9d6d7b4922b8e809d26b34c7991bfc88ff109a499790d436771ac3c"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/R2_BINARY_VERIFIED_ELIGIBILITY.csv": {
+      "bytes": 360,
+      "sha256": "a6a5113afbd409cc1e48baeecd7e2cab600c15932e22519c5c87f562419c536d"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/R3_PROTOCOL.md": {
+      "bytes": 2043,
+      "sha256": "4156285d41a57164d582bcb6bad99c7b16de1d341c3ca90a7017389cff117ad0"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/code/freeze_r3.py": {
+      "bytes": 1870,
+      "sha256": "c91d3e849de5d2a8a20dbdc5905b7804e22d9a100ad38ccb7e01d6f1274f1c65"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/code/prepare_r3_census.py": {
+      "bytes": 5431,
+      "sha256": "3619a9f5909a387b9e887b02b513becafd78064e26bc23cb0ca93037186ae44e"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/config/r3_contract.json": {
+      "bytes": 678,
+      "sha256": "aff3f60c57f2976b86a26612ba40a4e9dd8e680c688b39ebe718be75be39a35d"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/requirements-lock.txt": {
+      "bytes": 92,
+      "sha256": "7bb981c905872b33ef14b2321acb798ed06f65e3accd80f5afcdc0929f6b1043"
+    }
+  },
+  "model_execution_permitted": false,
+  "registered_ids": [
+    75,
+    327,
+    572
+  ],
+  "schema": "cacl-vpc-uci-r3-local-lock-v1",
+  "status": "R3_LOCAL_LOCKED_PENDING_EXTERNAL_TIMESTAMP"
+}
