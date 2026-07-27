@@ -1,0 +1,1103 @@
+{
+  "data": {
+    "abstract": "Dota 2 is a popular computer game with two teams of 5 players. At the start of the game each player chooses a unique hero with different strengths and weaknesses.",
+    "additional_info": {
+      "citation": null,
+      "funded_by": null,
+      "instances_represent": null,
+      "preprocessing_description": null,
+      "purpose": null,
+      "recommended_data_splits": null,
+      "sensitive_data": null,
+      "summary": "Dota 2 is a popular computer game with two teams of 5 players. At the start of the game each player chooses a unique hero with different strengths and weaknesses. The dataset is reasonably sparse as only 10 of 113 possible heroes are chosen in a given game. All games were played in a space of 2 hours on the 13th of August, 2016\n\nThe data was collected using: https://gist.github.com/da-steve101/1a7ae319448db431715bd75391a66e1b",
+      "variable_info": "Each row of the dataset is a single game with the following features (in the order in the vector):\n1. Team won the game (1 or -1)\n2. Cluster ID (related to location)\n3. Game mode (eg All Pick)\n4. Game type (eg. Ranked)\n5 - end: Each element is an indicator for a hero. Value of 1 indicates that a player from team '1' played as that hero and '-1' for the other team. Hero can be selected by only one player each game. This means that each row has five '1' and five '-1' values.\n\nThe hero to id mapping can be found here: https://github.com/kronusme/dota2-api/blob/master/data/heroes.json"
+    },
+    "area": "Games",
+    "characteristics": [
+      "Multivariate"
+    ],
+    "creators": [
+      "Stephen Tridgell"
+    ],
+    "data_url": "https://archive.ics.uci.edu/static/public/367/data.csv",
+    "dataset_doi": "10.24432/C5W593",
+    "demographics": [],
+    "feature_types": [],
+    "has_missing_values": "no",
+    "index_col": [
+      "clusterid"
+    ],
+    "intro_paper": null,
+    "last_updated": "Sat Apr 13 2024",
+    "missing_values_symbol": null,
+    "name": "Dota2 Games Results",
+    "num_features": 115,
+    "num_instances": 102944,
+    "repository_url": "https://archive.ics.uci.edu/dataset/367/dota2+games+results",
+    "target_col": [
+      "win"
+    ],
+    "tasks": [
+      "Classification"
+    ],
+    "uci_id": 367,
+    "variables": [
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "win",
+        "role": "Target",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "clusterid",
+        "role": "ID",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "gamemode",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "gametype",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero1",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero2",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero3",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero4",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero5",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero6",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero7",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero8",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero9",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero10",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero11",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero12",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero13",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero14",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero15",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero16",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero17",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero18",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero19",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero20",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero21",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero22",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero23",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero24",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero25",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero26",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero27",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero28",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero29",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero30",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero31",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero32",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero33",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero34",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero35",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero36",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero37",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero38",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero39",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero40",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero41",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero42",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero43",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero44",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero45",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero46",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero47",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero48",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero49",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero50",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero51",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero52",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero53",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero54",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero55",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero56",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero57",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero58",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero59",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero60",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero61",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero62",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero63",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero64",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero65",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero66",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero67",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero68",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero69",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero70",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero71",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero72",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero73",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero74",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero75",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero76",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero77",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero78",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero79",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero80",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero81",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero82",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero83",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero84",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero85",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero86",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero87",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero88",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero89",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero90",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero91",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero92",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero93",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero94",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero95",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero96",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero97",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero98",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero99",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero100",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero101",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero102",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero103",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero104",
+        "role": "Feature",
+        "type": "Integer",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero105",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero106",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero107",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero108",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero109",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero110",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero111",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero112",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      },
+      {
+        "demographic": null,
+        "description": null,
+        "missing_values": "no",
+        "name": "hero113",
+        "role": "Feature",
+        "type": "Binary",
+        "units": null
+      }
+    ],
+    "year_of_dataset_creation": 2016
+  },
+  "status": 200,
+  "statusText": "OK"
+}
