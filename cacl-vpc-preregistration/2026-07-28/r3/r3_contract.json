@@ -1,0 +1,19 @@
+{
+  "schema": "cacl-vpc-uci-r3-census-contract-v1",
+  "status": "LOCK_CANDIDATE_PENDING_EXTERNAL_TIMESTAMP",
+  "registered_ids": [75, 327, 572],
+  "selection": "complete census of R2 fully verified pool",
+  "replacement": false,
+  "algorithm_engine": "byte-identical Batch-1 cacl_vpc_uci_engine.py",
+  "candidate_budgets": [2, 4, 8],
+  "value_fraction_beta": 0.9,
+  "familywise_alpha": 0.025,
+  "target_alpha_gate": 0.00125,
+  "harm_ucb_cap": 0.2,
+  "coverage_lcb_floor": 0.2,
+  "average_compression_floor": 8.0,
+  "minimum_source_compress": 2,
+  "minimum_target_value_retention_passes": 2,
+  "compiled_parent_action_agreement": 1.0,
+  "thresholds_changed_from_batch1": false
+}
