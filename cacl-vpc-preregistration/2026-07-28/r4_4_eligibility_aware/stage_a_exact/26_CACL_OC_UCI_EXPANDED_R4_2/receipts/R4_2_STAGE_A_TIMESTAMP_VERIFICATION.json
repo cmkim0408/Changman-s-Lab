@@ -1,0 +1,9 @@
+{
+  "ack_sha256": "37b757ea3f0ad297fceaa2ad90d3d2fab90c75e1486206d2042e87997fb8d14e",
+  "all_locked_files_current": true,
+  "lock_sha256": "d9a6a4190ca18ade2602b2b701b480e98279d1d05921d19710534827de7d8fc6",
+  "new_data_access_permitted_after_receipt": true,
+  "public_commit_sha": "583e45ec554d04fa21962bd1cd79922f2c0bfa47",
+  "schema": "cacl-oc-r4.2-stage-a-verification-v1",
+  "status": "R4_2_STAGE_A_DATA_ACCESS_AUTHORIZED"
+}
