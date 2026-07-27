@@ -1,0 +1,87 @@
+{
+  "allowed_metadata_paths": [
+    "21_CACL_VPC_UCI_CLOSED_BATCH/registry_snapshot/metadata/uci_967.json",
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_967.json"
+  ],
+  "candidate_ids": [
+    967
+  ],
+  "candidate_path_hits": [
+    "21_CACL_VPC_UCI_CLOSED_BATCH/registry_snapshot/metadata/uci_967.json",
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_967.json"
+  ],
+  "checks": {
+    "candidate_path_hits_metadata_only": true,
+    "new_ids_exact": true,
+    "r1_candidate_intersection_empty": true,
+    "r1_selection_exact": true,
+    "r2_candidate_intersection_empty": true,
+    "r2_fetched_denominator_exact": true,
+    "r2_lock_binds_fetch_code": true,
+    "r2_selection_binds_code_and_ledger": true,
+    "r4_2_no_uci967_access": true,
+    "r4_3_no_uci967_access": true,
+    "r4_4_no_uci967_access": true
+  },
+  "claim_boundary": "This is a reproducible census of recorded paths and locked campaign receipts. It is not proof of absolute non-access, independent custody, or unrecorded activity outside the shared workspace.",
+  "evidence": {
+    "r1_final": {
+      "bytes": 1839,
+      "relative_path": "21_CACL_VPC_UCI_CLOSED_BATCH/receipts/BATCH1_FINAL_AUDIT.json",
+      "sha256": "3a5f8642dcd9ff35fa555511b3dced01fff93b894254782d1a701a7a1aa9517f"
+    },
+    "r1_preparation": {
+      "bytes": 2352,
+      "relative_path": "21_CACL_VPC_UCI_CLOSED_BATCH/receipts/PHASE3_PREPARATION_RECEIPT.json",
+      "sha256": "f3a77c154b48c1aa34e60a3cbc8a43d8cecbcc16c299fccebae4983a3f4a35ba"
+    },
+    "r1_selection": {
+      "bytes": 1623,
+      "relative_path": "21_CACL_VPC_UCI_CLOSED_BATCH/receipts/PHASE2_SELECTION_RECEIPT.json",
+      "sha256": "1cea4be5a98866b680a33136212585692bc130898bf7e258f950b05ab18202a8"
+    },
+    "r2_fetch_code": {
+      "bytes": 11317,
+      "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/code/r2_binary_verify_select.py",
+      "sha256": "47d63af22ffb007eb6fbb0b5197e0b7b41d9eb9cd525200d9e7a973deec37ad9"
+    },
+    "r2_lock": {
+      "bytes": 1711,
+      "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/receipts/R2_LOCAL_LOCK.json",
+      "sha256": "2224ee90eb4414ffb3e2d990b804b57b2b2926994088d2b0c2c84dfdbfc96fcf"
+    },
+    "r2_selection": {
+      "bytes": 1302,
+      "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/receipts/R2_SELECTION_RECEIPT.json",
+      "sha256": "63eb35dec9d6d7b4922b8e809d26b34c7991bfc88ff109a499790d436771ac3c"
+    },
+    "r2_verified_ledger": {
+      "bytes": 360,
+      "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/R2_BINARY_VERIFIED_ELIGIBILITY.csv",
+      "sha256": "a6a5113afbd409cc1e48baeecd7e2cab600c15932e22519c5c87f562419c536d"
+    }
+  },
+  "metadata_screen": {
+    "bytes": 145586,
+    "relative_path": "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_METADATA_SCREEN.json",
+    "sha256": "af6798e0368cf596a949ad701148b71c7614f0d20f0bde7c522a3985dac8ce25"
+  },
+  "passes": true,
+  "r1_selected_prepared_audited_ids": [
+    146,
+    31,
+    80,
+    365
+  ],
+  "r2_instance_fetch_ledger_ids": [
+    75,
+    107,
+    327,
+    572
+  ],
+  "r4_2_invalidation_lock_sha256": "d9a6a4190ca18ade2602b2b701b480e98279d1d05921d19710534827de7d8fc6",
+  "r4_3_invalidation_lock_sha256": "142484054b7350cdab2cbee079d176f4e908ca7651ff374414a89f75aa2b306b",
+  "r4_4_invalidation_lock_sha256": "2f677351834024cbf71c5ebeb5debe1593167af0de3708ba266dee50ba3aa11e",
+  "schema": "cacl-oc-r4.5-prior-access-audit-v1",
+  "status": "NO_RECORDED_UCI967_INSTANCE_TRACE_FOUND"
+}
