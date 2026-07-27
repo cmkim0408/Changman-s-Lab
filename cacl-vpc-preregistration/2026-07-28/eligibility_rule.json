@@ -1,0 +1,24 @@
+{
+  "schema": "cacl-vpc-uci-eligibility-v1",
+  "status": "LOCK_CANDIDATE_PENDING_EXTERNAL_TIMESTAMP",
+  "registry": "UCI_ONLY",
+  "registry_snapshot_rule": "first complete registry response after verified external timestamp",
+  "never_touched_rule": "UCI integer ID and normalized title must both be absent from the existing-project ledger",
+  "minimum_rows": 4000,
+  "minimum_numeric_predictors": 32,
+  "maximum_numeric_predictors": 500,
+  "outcome": "exactly one registry-declared binary target",
+  "predictor_types": "numerical only",
+  "maximum_overall_missing_fraction": 0.20,
+  "table_rule": "one tabular table; no temporal, grouped, image, text, graph, or multi-table task",
+  "license_rule": "registry metadata must explicitly allow research use",
+  "key_rule": "declared identifiers are retained only for hashing and never used as predictors",
+  "external_failure_rule": "download, license, schema, parse, target, or compatibility failure remains in the registered denominator as EXTERNAL_FAIL",
+  "selection": {
+    "rule": "seeded_random_without_replacement",
+    "batch_size": 4,
+    "seed": 2301001,
+    "pool_order": "UCI integer ID ascending"
+  },
+  "phase2_forbidden_until": "external timestamp acknowledgement passes local hash verification"
+}
