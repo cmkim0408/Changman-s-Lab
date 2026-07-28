@@ -572,7 +572,204 @@ def freeze_one(dataset_id: int) -> dict[str, Any]:
             )
             fitted_models[(int(depth), int(leaf))] = fitted
             for threshold in config["threshold_grid"]:
-                actions, masks, costs…1852 tokens truncated…abstention audit"
+                actions, masks, costs = query_actions_masks_and_costs(
+                    fitted,
+                    x[calibration],
+                    imputer.statistics_,
+                    static_action,
+                    float(threshold),
+                )
+                direct = direct_actions(
+                    fitted,
+                    transformed[calibration],
+                    static_action,
+                    float(threshold),
+                )
+                agreement = float(np.mean(actions == direct))
+                mask_cost_agreement = float(
+                    np.mean(np.sum(masks, axis=1) == costs)
+                )
+                if agreement != 1.0 or mask_cost_agreement != 1.0:
+                    raise RuntimeError(
+                        "calibration executor integrity mismatch"
+                    )
+                cert = certificate(
+                    actions,
+                    y[calibration],
+                    static_action,
+                    costs,
+                    x.shape[1],
+                    alpha=config["source_alpha"],
+                    harm_cap=config["selection_harm_ucb_cap"],
+                    recall_floor=config[
+                        "opportunity_recall_lcb_floor"
+                    ],
+                    compression_floor=config[
+                        "average_compression_floor"
+                    ],
+                )
+                all_candidates.append(
+                    {
+                        "depth": int(depth),
+                        "minimum_leaf_size": int(leaf),
+                        "threshold": float(threshold),
+                        "direct_query_action_agreement": agreement,
+                        "mask_cost_agreement": mask_cost_agreement,
+                        "calibration_screening_bounds": cert,
+                    }
+                )
+
+    eligible = [
+        row
+        for row in all_candidates
+        if row["calibration_screening_bounds"]["passes"]
+    ]
+    selected = max(eligible, key=selection_key) if eligible else None
+    diagnostic = max(all_candidates, key=selection_key)
+    deployed_choice = selected if selected is not None else diagnostic
+    tree = fitted_models[
+        (
+            int(deployed_choice["depth"]),
+            int(deployed_choice["minimum_leaf_size"]),
+        )
+    ]
+    threshold = float(deployed_choice["threshold"])
+
+    audit_actions, audit_masks, audit_costs = (
+        query_actions_masks_and_costs(
+            tree,
+            x[audit],
+            imputer.statistics_,
+            static_action,
+            threshold,
+        )
+    )
+    audit_direct = direct_actions(
+        tree, transformed[audit], static_action, threshold
+    )
+    audit_agreement = float(
+        np.mean(audit_actions == audit_direct)
+    )
+    audit_mask_cost_agreement = float(
+        np.mean(np.sum(audit_masks, axis=1) == audit_costs)
+    )
+    source_audit_certificate = certificate(
+        audit_actions,
+        y[audit],
+        static_action,
+        audit_costs,
+        x.shape[1],
+        alpha=config["source_alpha"],
+        harm_cap=config["scientific_harm_ucb_cap"],
+        recall_floor=config["opportunity_recall_lcb_floor"],
+        compression_floor=config["average_compression_floor"],
+    )
+    candidate_passes_source = (
+        selected is not None
+        and source_audit_certificate["passes"]
+        and audit_agreement
+        == config["direct_path_action_agreement"]
+        and audit_mask_cost_agreement == 1.0
+        and source_target_group_overlap == 0
+    )
+    candidate_route = (
+        "ACT"
+        if candidate_passes_source
+        else "ABSTAIN"
+    )
+    route = (
+        "DESCRIPTIVE_REPLAY"
+        if dataset_id in DESCRIPTIVE_IDS
+        else candidate_route
+    )
+
+    frozen = {
+        "schema": "cacl-oc-r4.5-frozen-policy-v1",
+        "dataset_id": int(dataset_id),
+        "route": route,
+        "candidate_route_before_role_override": candidate_route,
+        "static_action": static_action,
+        "imputer": imputer,
+        "tree": tree,
+        "threshold": threshold,
+        "selected_was_calibration_eligible": selected is not None,
+        "selected_specification": {
+            "depth": int(deployed_choice["depth"]),
+            "minimum_leaf_size": int(
+                deployed_choice["minimum_leaf_size"]
+            ),
+            "threshold": threshold,
+        },
+        "calibration_screening_bounds": deployed_choice[
+            "calibration_screening_bounds"
+        ],
+        "source_audit_certificate": source_audit_certificate,
+        "source_audit_direct_query_action_agreement": audit_agreement,
+        "source_audit_mask_cost_agreement": (
+            audit_mask_cost_agreement
+        ),
+        "source_group_count": len(set(source_group_ids.tolist())),
+        "source_archive_units": source_archive_units,
+        "source_representative_units": len(source_group_ids),
+        "source_train_group_count": len(
+            set(source_group_ids[train].tolist())
+        ),
+        "source_calibration_group_count": len(
+            set(source_group_ids[calibration].tolist())
+        ),
+        "source_audit_group_count": len(
+            set(source_group_ids[audit].tolist())
+        ),
+        "source_target_group_overlap": source_target_group_overlap,
+        "target_archive_units": target_archive_units,
+        "target_representative_units": len(target_group_ids),
+        "target_outcomes_opened": False,
+    }
+    frozen_path = output_root / "FROZEN_POLICY.joblib"
+    write_joblib_once(frozen_path, frozen)
+
+    target_actions, target_masks, target_costs = (
+        query_actions_masks_and_costs(
+            tree,
+            target_x,
+            imputer.statistics_,
+            static_action,
+            threshold,
+        )
+    )
+    transformed_target_for_audit_only = imputer.transform(target_x)
+    target_direct = direct_actions(
+        tree,
+        transformed_target_for_audit_only,
+        static_action,
+        threshold,
+    )
+    target_agreement = float(
+        np.mean(target_actions == target_direct)
+    )
+    target_mask_cost_agreement = float(
+        np.mean(np.sum(target_masks, axis=1) == target_costs)
+    )
+    if target_agreement != 1.0 or target_mask_cost_agreement != 1.0:
+        raise RuntimeError("target executor integrity mismatch")
+    if route == "ACT":
+        deployed_actions = target_actions.copy()
+        deployed_costs = target_costs.copy()
+        deployed_query_mask = target_masks.copy()
+        dispatch_status = "CANDIDATE_DISPATCHED_AS_ACT"
+    else:
+        deployed_actions = np.full(
+            len(target_actions), static_action, dtype=int
+        )
+        deployed_costs = np.zeros(len(target_actions), dtype=float)
+        deployed_query_mask = np.zeros_like(target_masks, dtype=bool)
+        dispatch_status = (
+            "STATIC_DESCRIPTIVE_DISPATCHED; candidate retained only "
+            "for descriptive replay"
+            if route == "DESCRIPTIVE_REPLAY"
+            else
+            "STATIC_ABSTENTION_DISPATCHED; candidate retained only "
+            "for counterfactual abstention audit"
         )
     actions_path = output_root / "SEALED_TARGET_ACTIONS.npz"
     write_npz_once(
