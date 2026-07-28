@@ -1,0 +1,72 @@
+{
+  "acquisition": {
+    "csv_bytes": 56854345,
+    "csv_sha256": "a236549cd369cd80bd478ff8e1779cbf44c58d5c3f79f7a51a1adbed7d06d1c6",
+    "final_url": "https://archive.ics.uci.edu/static/public/967/data.csv",
+    "metadata_snapshot_relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_967.json",
+    "metadata_snapshot_sha256": "43c189d8f547752c515b2612fda2a9c3f9578f7f3660c8490d18767d88fe68a9",
+    "method": "official_uci_static_csv",
+    "uci_id": 967,
+    "url": "https://archive.ics.uci.edu/static/public/967/data.csv"
+  },
+  "artifacts": {
+    "raw_official.csv": {
+      "bytes": 56854345,
+      "sha256": "a236549cd369cd80bd478ff8e1779cbf44c58d5c3f79f7a51a1adbed7d06d1c6"
+    },
+    "source.npz": {
+      "bytes": 5114307,
+      "sha256": "7a7a4611946db25e3acbdd65e7424f61dfaa49c4355a53a69566e4d8e61daee6"
+    },
+    "target_features.npz": {
+      "bytes": 2905554,
+      "sha256": "346e296efae7682d2e5b9858419ab7083745fda3293859ceea6dc2cef206ca63"
+    },
+    "target_outcomes.npz": {
+      "bytes": 1766959,
+      "sha256": "0a426f079e378a432dbf661776085099686af1c2bdedfae470239f9c2cfbea8d"
+    }
+  },
+  "excluded_feature_columns": [
+    "URL",
+    "Domain",
+    "TLD",
+    "Title",
+    "URLSimilarityIndex",
+    "CharContinuationRate",
+    "TLDLegitimateProb",
+    "URLCharProb"
+  ],
+  "group_rule": "normalized_domain",
+  "missing_fraction": 0.0,
+  "model_fitted": false,
+  "observed_name": "PhiUSIIL Phishing URL (Website)",
+  "ordered_primary_feature_name_sha256": "54250825298c88f28c5f24430288afa85ac2ab4cf21f630848217a34ae5fedc4",
+  "ordered_raw_feature_name_sha256": "8f2b32b72319d66b4d42225a0d7279269ee0b0e73592886446012ca4594f9866",
+  "predictors": 46,
+  "raw_instance_csv_preserved_for_post_reveal_audit": true,
+  "raw_rows": 235795,
+  "registered_groups": 92898,
+  "registered_name": "PhiUSIIL Phishing URL (Website)",
+  "registered_row_cap": 100000,
+  "registered_rows": 100000,
+  "schema": "cacl-oc-r4.5-new-data-preparation-v1",
+  "source_fraction": 0.63626,
+  "source_groups": 60196,
+  "source_target_group_overlap": 0,
+  "source_units": 63626,
+  "status": "R4_5_NEW_DATASET_PREPARED",
+  "target_cardinality": 2,
+  "target_groups": 32702,
+  "target_mapping": {
+    "mapping_fit_scope": "none_pre_instance_fixed_rule",
+    "observed_target_values_disclosed": false,
+    "rule": "positive_numeric_value_to_1_nonpositive_to_0"
+  },
+  "target_summary_emitted": false,
+  "target_transform": "pre-instance fixed numeric positive-to-1, nonpositive-to-0 mapping",
+  "target_transform_fit_scope": "none_pre_instance_fixed_rule",
+  "target_transform_registration": null,
+  "target_units": 36374,
+  "uci_id": 967
+}
