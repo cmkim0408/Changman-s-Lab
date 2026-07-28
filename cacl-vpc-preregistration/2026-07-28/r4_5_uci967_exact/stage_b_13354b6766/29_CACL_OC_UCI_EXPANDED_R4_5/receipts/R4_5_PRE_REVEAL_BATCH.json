@@ -1,0 +1,45 @@
+{
+  "campaign_denominator": [
+    75,
+    327,
+    572,
+    855,
+    367,
+    891,
+    942,
+    967
+  ],
+  "descriptive_denominator": [
+    75
+  ],
+  "historical_non_evaluated_denominator": [
+    855,
+    367,
+    891,
+    942
+  ],
+  "inferential_denominator": [
+    327,
+    572,
+    967
+  ],
+  "inferential_source_act_count": 2,
+  "new_source_act_count": 1,
+  "query_execution": "instrumented tree-path access over preloaded matrices",
+  "registered_denominator": [
+    75,
+    327,
+    572,
+    967
+  ],
+  "routes": {
+    "327": "ACT",
+    "572": "ABSTAIN",
+    "75": "DESCRIPTIVE_REPLAY",
+    "967": "ACT"
+  },
+  "schema": "cacl-oc-r4.5-pre-reveal-batch-v1",
+  "status": "R4_5_PRE_REVEAL_ROUTES_FROZEN",
+  "target_outcomes_semantically_opened": false,
+  "write_once": true
+}
