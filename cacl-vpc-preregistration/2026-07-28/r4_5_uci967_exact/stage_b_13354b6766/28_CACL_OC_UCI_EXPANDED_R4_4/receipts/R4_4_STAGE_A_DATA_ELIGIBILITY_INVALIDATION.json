@@ -1,0 +1,36 @@
+{
+  "schema": "cacl-oc-r4.4-stage-a-data-eligibility-invalidation-v1",
+  "status": "R4_4_INVALIDATED_AFTER_UCI942_ACCESS_BEFORE_PREPARATION_PERSISTENCE",
+  "invalidated_utc": "2026-07-27T23:22:56.9766957Z",
+  "failure_class": "pre_registered_exact_target_taxonomy_mismatch",
+  "failure_dataset_id": 942,
+  "failure_message": "UCI 942: target label absent from locked exact taxonomy",
+  "public_stage_a_commit": "f248aacb207ca678b5fee5cc83dc8b880e1ec414",
+  "stage_a_lock_sha256": "2f677351834024cbf71c5ebeb5debe1593167af0de3708ba266dee50ba3aa11e",
+  "stage_a_ack_sha256": "d96ff9f85f77189db6d561ab738df97e7d7a69f46ced8b7a68751be966fd13b4",
+  "stage_a_verification_sha256": "7d4cd433b79f0f412047208ab88dd5f6456abb69cdd3941d0bb619475601b946",
+  "instance_data_read_reached_by_dataset": {
+    "367": true,
+    "891": true,
+    "942": true,
+    "967": false
+  },
+  "target_labels_read_by_preparation_layer_by_dataset": {
+    "367": true,
+    "891": true,
+    "942": true,
+    "967": false
+  },
+  "scientific_engine_target_outcome_opened": false,
+  "prepared_census_created": false,
+  "registered_census_created": false,
+  "preparation_batch_created": false,
+  "scientific_model_fitted": false,
+  "source_route_computed": false,
+  "target_action_computed": false,
+  "target_certificate_computed": false,
+  "r4_4_retry_permitted": false,
+  "r4_4_scientific_result_permitted": false,
+  "repair_policy": "Do not relax or refit the UCI942 taxonomy using revealed labels. Preserve this campaign as failed and register a new campaign using only still-untouched datasets.",
+  "untouched_dataset_retained_for_future_registration": 967
+}
