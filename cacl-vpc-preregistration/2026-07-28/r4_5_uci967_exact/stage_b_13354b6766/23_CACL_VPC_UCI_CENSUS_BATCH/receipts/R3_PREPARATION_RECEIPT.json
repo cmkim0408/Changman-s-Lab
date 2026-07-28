@@ -1,0 +1,100 @@
+{
+  "code_sha256": "3619a9f5909a387b9e887b02b513becafd78064e26bc23cb0ca93037186ae44e",
+  "datasets": [
+    {
+      "artifacts": {
+        "source.npz": {
+          "bytes": 1255102,
+          "sha256": "10457719b40a3edf1b7003a998013233af07fb9a2304e5dca0f8458e27113cfa"
+        },
+        "target_features.npz": {
+          "bytes": 674924,
+          "sha256": "d9d73dd31504d0495d84d0c2c0f1225ef7d0068f6876b883708a9b129978f59e"
+        },
+        "target_outcomes.npz": {
+          "bytes": 6678,
+          "sha256": "7bfb44479e949a7dfee94bb6eb7bf7faabbfb68da6be437aa76d06ee8d9105fb"
+        }
+      },
+      "missing_fraction": 0.0,
+      "name": "Musk (Version 2)",
+      "predictors": 166,
+      "rows": 6598,
+      "source_units": 4288,
+      "status": "R3_SOURCE_TARGET_PREPARED",
+      "target_cardinality": 2,
+      "target_mapping": {
+        "0.0": 0,
+        "1.0": 1
+      },
+      "target_units": 2310,
+      "uci_id": 75
+    },
+    {
+      "artifacts": {
+        "source.npz": {
+          "bytes": 68044,
+          "sha256": "2bff43f4ebbda646ebc7916e505545b35317df0c6c2905e34593391f18c59f25"
+        },
+        "target_features.npz": {
+          "bytes": 35591,
+          "sha256": "801c66ffc9fb2488bfdd5292fe413b6d400b42e6306de2e5357efd2c1e4fe25a"
+        },
+        "target_outcomes.npz": {
+          "bytes": 11423,
+          "sha256": "2a37fd003a8a1a9d10254a2e7de0d978dfdba0fe7d6c2adcb014d1be3d218feb"
+        }
+      },
+      "missing_fraction": 0.0,
+      "name": "Phishing Websites",
+      "predictors": 30,
+      "rows": 11055,
+      "source_units": 7185,
+      "status": "R3_SOURCE_TARGET_PREPARED",
+      "target_cardinality": 2,
+      "target_mapping": {
+        "-1": 0,
+        "1": 1
+      },
+      "target_units": 3870,
+      "uci_id": 327
+    },
+    {
+      "artifacts": {
+        "source.npz": {
+          "bytes": 2863858,
+          "sha256": "f81e41209bdd78d5b2edd9d473e2d1de945b565efd5334284bbba9a12e631c98"
+        },
+        "target_features.npz": {
+          "bytes": 1541427,
+          "sha256": "fe49df9a1eaa2cc70eda02ceb3aa5779a25439894381c31b73cf1a48f45814af"
+        },
+        "target_outcomes.npz": {
+          "bytes": 6601,
+          "sha256": "2d4e69d7f8c034b724bc06f5402bcae203240df4f17568e48cc32a842d6c1c98"
+        }
+      },
+      "missing_fraction": 0.0,
+      "name": "Taiwanese Bankruptcy Prediction",
+      "predictors": 95,
+      "rows": 6819,
+      "source_units": 4432,
+      "status": "R3_SOURCE_TARGET_PREPARED",
+      "target_cardinality": 2,
+      "target_mapping": {
+        "0": 0,
+        "1": 1
+      },
+      "target_units": 2387,
+      "uci_id": 572
+    }
+  ],
+  "datasets_replaced": false,
+  "registered_ids": [
+    75,
+    327,
+    572
+  ],
+  "schema": "cacl-vpc-uci-r3-preparation-v1",
+  "status": "R3_CENSUS_PREPARATION_COMPLETE"
+}
