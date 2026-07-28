@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "source.npz": {
+      "bytes": 2863858,
+      "sha256": "f81e41209bdd78d5b2edd9d473e2d1de945b565efd5334284bbba9a12e631c98"
+    },
+    "target_features.npz": {
+      "bytes": 1541427,
+      "sha256": "fe49df9a1eaa2cc70eda02ceb3aa5779a25439894381c31b73cf1a48f45814af"
+    },
+    "target_outcomes.npz": {
+      "bytes": 6601,
+      "sha256": "2d4e69d7f8c034b724bc06f5402bcae203240df4f17568e48cc32a842d6c1c98"
+    }
+  },
+  "missing_fraction": 0.0,
+  "name": "Taiwanese Bankruptcy Prediction",
+  "predictors": 95,
+  "rows": 6819,
+  "source_units": 4432,
+  "status": "R3_SOURCE_TARGET_PREPARED",
+  "target_cardinality": 2,
+  "target_mapping": {
+    "0": 0,
+    "1": 1
+  },
+  "target_units": 2387,
+  "uci_id": 572
+}
