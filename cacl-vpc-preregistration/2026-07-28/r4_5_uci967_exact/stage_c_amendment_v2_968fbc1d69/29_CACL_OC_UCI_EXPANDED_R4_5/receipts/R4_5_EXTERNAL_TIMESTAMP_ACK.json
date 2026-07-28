@@ -1,0 +1,312 @@
+{
+  "ack_created_by_network_fetch": true,
+  "commit_api_url": "https://api.github.com/repos/cmkim0408/Changman-s-Lab/commits/ef22eb99bebd86ec10b87006f35b0f779abdede6",
+  "local_lock_sha256": "13354b676643e3ba826635d90b6034ccf74d3fea4491ca2602755caf309c184e",
+  "public_commit_sha": "ef22eb99bebd86ec10b87006f35b0f779abdede6",
+  "public_timestamp_utc": "2026-07-28T00:14:53Z",
+  "public_url": "https://github.com/cmkim0408/Changman-s-Lab/commit/ef22eb99bebd86ec10b87006f35b0f779abdede6",
+  "remote_file_count": 59,
+  "remote_files_exactly_match_local": true,
+  "remote_lock_sha256": "13354b676643e3ba826635d90b6034ccf74d3fea4491ca2602755caf309c184e",
+  "remote_path_prefix": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766",
+  "schema": "cacl-oc-r4.5-timestamp-ack-v1",
+  "target_outcomes_not_semantically_decoded_by_scientific_engine_at_timestamp": true,
+  "target_outcomes_semantically_decoded_by_this_verifier": false,
+  "verified_remote_files": {
+    "21_CACL_VPC_UCI_CLOSED_BATCH/receipts/BATCH1_FINAL_AUDIT.json": {
+      "bytes": 1839,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/21_CACL_VPC_UCI_CLOSED_BATCH/receipts/BATCH1_FINAL_AUDIT.json",
+      "sha256": "3a5f8642dcd9ff35fa555511b3dced01fff93b894254782d1a701a7a1aa9517f"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/receipts/PHASE2_SELECTION_RECEIPT.json": {
+      "bytes": 1623,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/21_CACL_VPC_UCI_CLOSED_BATCH/receipts/PHASE2_SELECTION_RECEIPT.json",
+      "sha256": "1cea4be5a98866b680a33136212585692bc130898bf7e258f950b05ab18202a8"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/receipts/PHASE3_PREPARATION_RECEIPT.json": {
+      "bytes": 2352,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/21_CACL_VPC_UCI_CLOSED_BATCH/receipts/PHASE3_PREPARATION_RECEIPT.json",
+      "sha256": "f3a77c154b48c1aa34e60a3cbc8a43d8cecbcc16c299fccebae4983a3f4a35ba"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/code/r2_binary_verify_select.py": {
+      "bytes": 11317,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/code/r2_binary_verify_select.py",
+      "sha256": "47d63af22ffb007eb6fbb0b5197e0b7b41d9eb9cd525200d9e7a973deec37ad9"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/receipts/R2_LOCAL_LOCK.json": {
+      "bytes": 1711,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/receipts/R2_LOCAL_LOCK.json",
+      "sha256": "2224ee90eb4414ffb3e2d990b804b57b2b2926994088d2b0c2c84dfdbfc96fcf"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/receipts/R2_SELECTION_RECEIPT.json": {
+      "bytes": 1302,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/receipts/R2_SELECTION_RECEIPT.json",
+      "sha256": "63eb35dec9d6d7b4922b8e809d26b34c7991bfc88ff109a499790d436771ac3c"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_967.json": {
+      "bytes": 15204,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_967.json",
+      "sha256": "43c189d8f547752c515b2612fda2a9c3f9578f7f3660c8490d18767d88fe68a9"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/receipts/R3_PREPARATION_RECEIPT.json": {
+      "bytes": 2902,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/23_CACL_VPC_UCI_CENSUS_BATCH/receipts/R3_PREPARATION_RECEIPT.json",
+      "sha256": "1b0eadec62e26cc99e2afb95ab43cabfc9be7857d46b40b103d959bc139e1093"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/receipts/R3_SOURCE_STOP_AUDIT.json": {
+      "bytes": 4221,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/23_CACL_VPC_UCI_CENSUS_BATCH/receipts/R3_SOURCE_STOP_AUDIT.json",
+      "sha256": "374a410c55f7ed6566c4e4a9f55a91368bcea8e77accbaf22f7c517fe36c862e"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/registered_census/uci_327/PREPARATION_RECEIPT.json": {
+      "bytes": 746,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/23_CACL_VPC_UCI_CENSUS_BATCH/registered_census/uci_327/PREPARATION_RECEIPT.json",
+      "sha256": "965425774da9ace1817df868b33dec9eac6ca421c825c09233e26c0e47671486"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/registered_census/uci_572/PREPARATION_RECEIPT.json": {
+      "bytes": 761,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/23_CACL_VPC_UCI_CENSUS_BATCH/registered_census/uci_572/PREPARATION_RECEIPT.json",
+      "sha256": "2230523cf8b4930310b7cf263b991441acbe333eec610dab4f834e899e3a6e31"
+    },
+    "23_CACL_VPC_UCI_CENSUS_BATCH/registered_census/uci_75/PREPARATION_RECEIPT.json": {
+      "bytes": 749,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/23_CACL_VPC_UCI_CENSUS_BATCH/registered_census/uci_75/PREPARATION_RECEIPT.json",
+      "sha256": "2177b7781a1f254dbd82d0ff24f91375588bdcb461711dee5902873e3e6d5e80"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/R4_STATIC_AUDIT_INVALIDATION.md": {
+      "bytes": 1092,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/24_CACL_OC_UCI_TARGET_UNTOUCHED/R4_STATIC_AUDIT_INVALIDATION.md",
+      "sha256": "166d5aa48e5fe7b40b19839a6ad47fe170364aa726ada2985d239083dd208e2e"
+    },
+    "24_CACL_OC_UCI_TARGET_UNTOUCHED/receipts/R4_PRE_REVEAL_INVALIDATION.json": {
+      "bytes": 738,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/24_CACL_OC_UCI_TARGET_UNTOUCHED/receipts/R4_PRE_REVEAL_INVALIDATION.json",
+      "sha256": "b6c801691aea9fd8f00e5cf7a9581fab1c2f1b4f2336bd4d83e3bdb8c9fa9502"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/R4_2_TRANSPORT_INVALIDATION.md": {
+      "bytes": 1135,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/26_CACL_OC_UCI_EXPANDED_R4_2/R4_2_TRANSPORT_INVALIDATION.md",
+      "sha256": "b34ace13bea751025b10ddce9946ef2cb9e4b22dbcb30c96d66bea2fd9fc6aab"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_LOCAL_LOCK.json": {
+      "bytes": 3411,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_LOCAL_LOCK.json",
+      "sha256": "d9a6a4190ca18ade2602b2b701b480e98279d1d05921d19710534827de7d8fc6"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TIMESTAMP_ACK.json": {
+      "bytes": 5575,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TIMESTAMP_ACK.json",
+      "sha256": "37b757ea3f0ad297fceaa2ad90d3d2fab90c75e1486206d2042e87997fb8d14e"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TIMESTAMP_VERIFICATION.json": {
+      "bytes": 429,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TIMESTAMP_VERIFICATION.json",
+      "sha256": "fcd29abeafa1d0c94ee3acdcb2c4c26cb59c1d83ac625cb82e59e49a501f4ef7"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TRANSPORT_INVALIDATION.json": {
+      "bytes": 887,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TRANSPORT_INVALIDATION.json",
+      "sha256": "324abdc6e62d98821d4a8833f276dc1e2682d6f40e3c1d1f4d854c906857cecc"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/R4_3_DATA_ELIGIBILITY_INVALIDATION.md": {
+      "bytes": 1121,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/27_CACL_OC_UCI_EXPANDED_R4_3/R4_3_DATA_ELIGIBILITY_INVALIDATION.md",
+      "sha256": "a85d5c3c92a74a8668b351c3783af3e2b2916902e41ba6c617bdb8180c5d6eca"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_DATA_ELIGIBILITY_INVALIDATION.json": {
+      "bytes": 1335,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_DATA_ELIGIBILITY_INVALIDATION.json",
+      "sha256": "cbe42fdcfcd01a5637306da96c2d798085c4c9d17fb6567043f1c83c9e35b444"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_LOCAL_LOCK.json": {
+      "bytes": 4755,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_LOCAL_LOCK.json",
+      "sha256": "142484054b7350cdab2cbee079d176f4e908ca7651ff374414a89f75aa2b306b"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_TIMESTAMP_ACK.json": {
+      "bytes": 7349,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_TIMESTAMP_ACK.json",
+      "sha256": "5b720ede04e1a40be71008a99792162629e46dfd3778b703131d3421b5bf8db2"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_TIMESTAMP_VERIFICATION.json": {
+      "bytes": 429,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_TIMESTAMP_VERIFICATION.json",
+      "sha256": "1907723bb0d730dd7d07705383ee30225098415cfa3740732b1be0c775f79c1d"
+    },
+    "28_CACL_OC_UCI_EXPANDED_R4_4/R4_4_DATA_ELIGIBILITY_INVALIDATION.md": {
+      "bytes": 1408,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/28_CACL_OC_UCI_EXPANDED_R4_4/R4_4_DATA_ELIGIBILITY_INVALIDATION.md",
+      "sha256": "c5108114bcc1de79aef625f7dd0b49a559c1ac405882da0a5cc3e7394118be61"
+    },
+    "28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_STAGE_A_DATA_ELIGIBILITY_INVALIDATION.json": {
+      "bytes": 1624,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_STAGE_A_DATA_ELIGIBILITY_INVALIDATION.json",
+      "sha256": "2d8809e70f4ff4bf7b75eee72ad7706e3cf165e600619a746f1c0d07c571934b"
+    },
+    "28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_STAGE_A_LOCAL_LOCK.json": {
+      "bytes": 11384,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_STAGE_A_LOCAL_LOCK.json",
+      "sha256": "2f677351834024cbf71c5ebeb5debe1593167af0de3708ba266dee50ba3aa11e"
+    },
+    "28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_STAGE_A_TIMESTAMP_ACK.json": {
+      "bytes": 15009,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_STAGE_A_TIMESTAMP_ACK.json",
+      "sha256": "d96ff9f85f77189db6d561ab738df97e7d7a69f46ced8b7a68751be966fd13b4"
+    },
+    "28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_STAGE_A_TIMESTAMP_VERIFICATION.json": {
+      "bytes": 429,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/28_CACL_OC_UCI_EXPANDED_R4_4/receipts/R4_4_STAGE_A_TIMESTAMP_VERIFICATION.json",
+      "sha256": "7d4cd433b79f0f412047208ab88dd5f6456abb69cdd3941d0bb619475601b946"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/R4_5_PROTOCOL.md": {
+      "bytes": 3296,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/R4_5_PROTOCOL.md",
+      "sha256": "e783a9ca9c137e0279931aca721ec6e612902685c0e85e43645f350f1639d20f"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/R4_5_STAGE_A_REGISTRATION.md": {
+      "bytes": 3742,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/R4_5_STAGE_A_REGISTRATION.md",
+      "sha256": "c49e1a9dae6f85715274110ac70f69d172b4499cafc10f24b3d957e97b784f7c"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/audit_r4_5_final.py": {
+      "bytes": 92090,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/audit_r4_5_final.py",
+      "sha256": "98e215e3cc661773acaf423f9dc125968f7295c862085426133523705e9dfa61"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/build_r4_5_prior_access_audit.py": {
+      "bytes": 10474,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/build_r4_5_prior_access_audit.py",
+      "sha256": "1c906b93e9c9d928180925f66fd9b0c5f6639d29a09856d4d471273c0d32eaa9"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/cacl_oc_engine.py": {
+      "bytes": 44839,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/cacl_oc_engine.py",
+      "sha256": "954370ab0c7861e621b68e4c70fcfc0717b37887659b05915decc95976eeb5b8"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/create_r4_5_public_ack.py": {
+      "bytes": 7033,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/create_r4_5_public_ack.py",
+      "sha256": "6fa49178fa2b67cf51ad612576aca09b1041aa9bf77727cbabf34e2c608d115f"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/freeze_r4_5_lock.py": {
+      "bytes": 6551,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/freeze_r4_5_lock.py",
+      "sha256": "201b57bb173ab22026c15d7bdeb5a92a4fe2faafd29fd46c50bdab385879e297"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/freeze_r4_5_stage_a_lock.py": {
+      "bytes": 2429,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/freeze_r4_5_stage_a_lock.py",
+      "sha256": "e19318dbd0ba8a5d41460af5ed4234e4cf0af7cb4fb10a5276c75d79bef62ed7"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/integrity.py": {
+      "bytes": 61145,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/integrity.py",
+      "sha256": "5a9317b2f05af39d5aa670867652be8fdc087cd10846448ade016341f62fcb06"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/prelock_static_audit.py": {
+      "bytes": 7491,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/prelock_static_audit.py",
+      "sha256": "0fd32888d0be9fde4ee42113865161c18456fc7438e6595d4c49bb435462ea17"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/prepare_r4_5_new_data.py": {
+      "bytes": 22101,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/prepare_r4_5_new_data.py",
+      "sha256": "7fbbad7d05f7fc93d88a1751617f644e2ddc244e0324c7c78bac8501201aef92"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/verify_r4_5_stage_a_timestamp.py": {
+      "bytes": 984,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/verify_r4_5_stage_a_timestamp.py",
+      "sha256": "009e28dba81a835e17f630e23141f7c4576c6cd77409ccb9105bbabed6c53f58"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/verify_r4_5_timestamp.py": {
+      "bytes": 1278,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/code/verify_r4_5_timestamp.py",
+      "sha256": "a05268e0bc00a051ac33b97a42821ff4b44f43d5c856d04cc80d8ebe229a89f8"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/config/r4_5_contract.json": {
+      "bytes": 3734,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/config/r4_5_contract.json",
+      "sha256": "bece0d94dda0bcabc04d87d0e1da6c1b7f2a5a242877ed584a0f0f41a81fb74a"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/PREPARATION_RECEIPT.json": {
+      "bytes": 2661,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/PREPARATION_RECEIPT.json",
+      "sha256": "3249c2cda08589cbb2123440d164bfdee83118af10d45c5ae211fc628a468098"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_LOCAL_LOCK.json": {
+      "bytes": 21764,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_LOCAL_LOCK.json",
+      "sha256": "13354b676643e3ba826635d90b6034ccf74d3fea4491ca2602755caf309c184e"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_METADATA_SCREEN.json": {
+      "bytes": 145586,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_METADATA_SCREEN.json",
+      "sha256": "af6798e0368cf596a949ad701148b71c7614f0d20f0bde7c522a3985dac8ce25"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_NEW_DATA_PREPARATION.json": {
+      "bytes": 3208,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_NEW_DATA_PREPARATION.json",
+      "sha256": "c9124e9243d49a15cd36f7994eeb1cc3acb55f1548d836ce71dca1b200beae27"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_PRELOCK_STATIC_AUDIT.json": {
+      "bytes": 1320,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_PRELOCK_STATIC_AUDIT.json",
+      "sha256": "6c2a4807638a3824c96449f0ad27041d8fd350f282c8f03f8494060a4e6f628f"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_PRELOCK_STATIC_AUDIT_V2.json": {
+      "bytes": 4292,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_PRELOCK_STATIC_AUDIT_V2.json",
+      "sha256": "38017eeb4776d4a071650e2569bb63f977e9ebfd71473bfc2ddd56c0eff3172b"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_PRE_REVEAL_BATCH.json": {
+      "bytes": 779,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_PRE_REVEAL_BATCH.json",
+      "sha256": "fdb4fa581d0d60dd665ca1b7f8466d073e73bcd64eba92302fb18085486d6581"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_PRIOR_ACCESS_AUDIT.json": {
+      "bytes": 3522,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_PRIOR_ACCESS_AUDIT.json",
+      "sha256": "2d3472db48135513f192714d185b3dfce18f01b66430b3fedf8d5f7021049b4b"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_LOCAL_LOCK.json": {
+      "bytes": 11935,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_LOCAL_LOCK.json",
+      "sha256": "30a0c0b25edeb5f5bc981a0ce7795628fe6e5ffd347f24ce86e2d68f7fe7df1d"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_TIMESTAMP_ACK.json": {
+      "bytes": 15609,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_TIMESTAMP_ACK.json",
+      "sha256": "795be761ad4094728b20261dc298b21d9ace162393ed1b79a579e801f73c0792"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_TIMESTAMP_VERIFICATION.json": {
+      "bytes": 429,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_TIMESTAMP_VERIFICATION.json",
+      "sha256": "6af15bec66c4590d88ff8e28af610ec456bd78e44eaa595c83c6c567b174f3d6"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_327/SOURCE_FREEZE_RECEIPT.json": {
+      "bytes": 5357,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_327/SOURCE_FREEZE_RECEIPT.json",
+      "sha256": "3b03e3fb23932d3fa0608e84520e430a2d566e19ba47294f6b2a55572215635b"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_572/SOURCE_FREEZE_RECEIPT.json": {
+      "bytes": 5113,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_572/SOURCE_FREEZE_RECEIPT.json",
+      "sha256": "337eaf5f4babd750061228231cde8fcd803f38bfd0baec952105bb9459563df5"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_75/SOURCE_FREEZE_RECEIPT.json": {
+      "bytes": 5406,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_75/SOURCE_FREEZE_RECEIPT.json",
+      "sha256": "7cbf742a3113ac457e2026ff832ac869a34c76b61a18a112f9a297c0872e867b"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/SOURCE_FREEZE_RECEIPT.json": {
+      "bytes": 5381,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/SOURCE_FREEZE_RECEIPT.json",
+      "sha256": "2e88871b67c5a5946b42c5be6ecfd772df4ab4bacea0201a556e00e24dc24f53"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/requirements-lock.txt": {
+      "bytes": 92,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_5_uci967_exact/stage_b_13354b6766/29_CACL_OC_UCI_EXPANDED_R4_5/requirements-lock.txt",
+      "sha256": "7bb981c905872b33ef14b2321acb798ed06f65e3accd80f5afcdc0929f6b1043"
+    }
+  }
+}
