@@ -1,0 +1,40 @@
+{
+  "batch1_preserved_status": "INCONCLUSIVE_EXTERNAL",
+  "files": {
+    "21_CACL_VPC_UCI_CLOSED_BATCH/code/cacl_vpc_uci_engine.py": {
+      "bytes": 18991,
+      "sha256": "01e4308fdfc2c5d51f703896db6ace83806efa881115822a11da03207d3d1d50"
+    },
+    "21_CACL_VPC_UCI_CLOSED_BATCH/receipts/BATCH1_FINAL_AUDIT.json": {
+      "bytes": 1839,
+      "sha256": "3a5f8642dcd9ff35fa555511b3dced01fff93b894254782d1a701a7a1aa9517f"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/R2_PROTOCOL.md": {
+      "bytes": 2841,
+      "sha256": "3ed33243767d440d90f16ae073e2a5c1677aaf831b1b5cf2a859b4c2d7291bad"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/code/freeze_r2.py": {
+      "bytes": 1917,
+      "sha256": "905e7737c569a451a3e8f97bfee43165faa024313f4bbba88e5868f802acf4cb"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/code/r2_binary_verify_select.py": {
+      "bytes": 11317,
+      "sha256": "47d63af22ffb007eb6fbb0b5197e0b7b41d9eb9cd525200d9e7a973deec37ad9"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/config/r2_contract.json": {
+      "bytes": 753,
+      "sha256": "156d31762b5267f117650ec369cf3bc208dc43db69ef84918feccd58e8101894"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/config/r2_eligibility.json": {
+      "bytes": 986,
+      "sha256": "01f7bc7ead6d73144e685f2ad985ea3bbe64be68a58b0467b01557fea21a1e85"
+    },
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/requirements-lock.txt": {
+      "bytes": 92,
+      "sha256": "7bb981c905872b33ef14b2321acb798ed06f65e3accd80f5afcdc0929f6b1043"
+    }
+  },
+  "registry_or_cardinality_scan_permitted": false,
+  "schema": "cacl-vpc-uci-r2-local-lock-v1",
+  "status": "R2_LOCAL_LOCKED_PENDING_EXTERNAL_TIMESTAMP"
+}
