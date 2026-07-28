@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "source.npz": {
+      "bytes": 68044,
+      "sha256": "2bff43f4ebbda646ebc7916e505545b35317df0c6c2905e34593391f18c59f25"
+    },
+    "target_features.npz": {
+      "bytes": 35591,
+      "sha256": "801c66ffc9fb2488bfdd5292fe413b6d400b42e6306de2e5357efd2c1e4fe25a"
+    },
+    "target_outcomes.npz": {
+      "bytes": 11423,
+      "sha256": "2a37fd003a8a1a9d10254a2e7de0d978dfdba0fe7d6c2adcb014d1be3d218feb"
+    }
+  },
+  "missing_fraction": 0.0,
+  "name": "Phishing Websites",
+  "predictors": 30,
+  "rows": 11055,
+  "source_units": 7185,
+  "status": "R3_SOURCE_TARGET_PREPARED",
+  "target_cardinality": 2,
+  "target_mapping": {
+    "-1": 0,
+    "1": 1
+  },
+  "target_units": 3870,
+  "uci_id": 327
+}
