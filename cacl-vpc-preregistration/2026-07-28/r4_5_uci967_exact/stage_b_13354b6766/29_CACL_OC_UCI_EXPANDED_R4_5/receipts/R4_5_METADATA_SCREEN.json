@@ -1,0 +1,4201 @@
+{
+  "additional_selected_ids": [],
+  "carry_forward_outside_screen": {
+    "reason": "pre-registered in R4.2-R4.4; R4.4 preprocessing is unchanged and all three invalidation chains record no UCI967 instance access",
+    "uci_id": 967
+  },
+  "claim_boundary": "The screen is exhaustive only for the frozen 208-file metadata snapshot and the exact declared rule.",
+  "eligible_ids_with_recorded_instance_artifacts": [
+    94,
+    350
+  ],
+  "metadata_eligible_ids": [
+    94,
+    350
+  ],
+  "prior_instance_evidence": {
+    "350": {
+      "bytes": 5539494,
+      "relative_path": "13_CACL_1_0_CONSOLIDATION/operational_final/source_data/uci_350_credit_default.zip",
+      "sha256": "56c885f84457f6680f8438f02bfcdac9579323d8a94465ee5f26e32baa727602"
+    },
+    "94": {
+      "bytes": 125537,
+      "relative_path": "14_CACL_THREE_CYCLE_EXTENSION/closing_spambase/source_data/uci_94_spambase.zip",
+      "sha256": "813ac1df8effac70463c09c9c4b11e8803eefcab54771af66150852bcdcd1636"
+    }
+  },
+  "rows": [
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5075,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_1.json",
+        "sha256": "db41d6f84587f2ca064ba8ddf509d507efb330ff638276ed3faa38a4a6a7226b"
+      },
+      "name": "Abalone",
+      "uci_id": 1
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 7748,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_2.json",
+        "sha256": "6afdfe34256cfd91eab7d91079da6721bba4e743a19997cd23ebcb99cbc48d6e"
+      },
+      "name": "Adult",
+      "uci_id": 2
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 12765,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_3.json",
+        "sha256": "44c69d6574a1a9fd45cde9a4be7846b46ee92a5fc90dce35afaf2280c390bf16"
+      },
+      "name": "Annealing",
+      "uci_id": 3
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 22688,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_8.json",
+        "sha256": "4d177af7c47148c12393ca5619e0fc25265d812605dfbfd538b033a8a7c0c24b"
+      },
+      "name": "Audiology (Standardized)",
+      "uci_id": 8
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4213,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_9.json",
+        "sha256": "9a2e337bc1a21d88035fdc2dfc37e2e10d1f782d9750701b6268cfc065a7cf0a"
+      },
+      "name": "Auto MPG",
+      "uci_id": 9
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10835,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_10.json",
+        "sha256": "969592073820c05ebc24a67680135a47ad7b68a9d2ce2101a45366adfe9c840d"
+      },
+      "name": "Automobile",
+      "uci_id": 10
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3060,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_12.json",
+        "sha256": "7c9d2ee53f5fdef0645f6962b9a541368b099451985cf802c32482aa769675b6"
+      },
+      "name": "Balance Scale",
+      "uci_id": 12
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3114,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_13.json",
+        "sha256": "e4772485196ce78ad1b5ad7f5c419a4fb8a8b784da2b6f8a08aefa1e68bb9f79"
+      },
+      "name": "Balloons",
+      "uci_id": 13
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5194,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_14.json",
+        "sha256": "62980b6b15db873946f6fc1188bcd15403959041f76c636e2c2a0e5816297c70"
+      },
+      "name": "Breast Cancer",
+      "uci_id": 14
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 6991,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_15.json",
+        "sha256": "e105592fb4c79a6376bcdacb5c5147b54b22fd454a1e3161f7113897a9c52f8e"
+      },
+      "name": "Breast Cancer Wisconsin (Original)",
+      "uci_id": 15
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 11717,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_16.json",
+        "sha256": "465887d2c59ab4365a6e094b0fbae7a91c4dfcafdf5f37776ebf8df3ed83c07c"
+      },
+      "name": "Breast Cancer Wisconsin (Prognostic)",
+      "uci_id": 16
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10882,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_17.json",
+        "sha256": "99efb4b331fc69abe8e82f3d45baa37f072f38a796e0bbf63c80559dd88d40a2"
+      },
+      "name": "Breast Cancer Wisconsin (Diagnostic)",
+      "uci_id": 17
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5488,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_18.json",
+        "sha256": "70d36a2270a2fe73e744c4568c8a31b99150a080972e06d6a6459d4916d8745c"
+      },
+      "name": "Pittsburgh Bridges",
+      "uci_id": 18
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5410,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_19.json",
+        "sha256": "32d31bd5aaca3566b934a6a6eabbed4d266b0926c4a384f44d87add788ad6197"
+      },
+      "name": "Car Evaluation",
+      "uci_id": 19
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 7698,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_20.json",
+        "sha256": "33fcec2e7b72c49a21f059e7736bc9bfa096af0bfa6f16bb64413d04a30d7325"
+      },
+      "name": "Census Income",
+      "uci_id": 20
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 9488,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_22.json",
+        "sha256": "7435395a44f1dcf1212e80a996af15edc5beb62f3118e72a54fa2f5af7424497"
+      },
+      "name": "Chess (King-Rook vs. King-Pawn)",
+      "uci_id": 22
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5971,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_23.json",
+        "sha256": "e9931f0b109443dcfe1c41dcf50572361f642662a2c44804932c92e898a387ad"
+      },
+      "name": "Chess (King-Rook vs. King)",
+      "uci_id": 23
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 12098,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_26.json",
+        "sha256": "34f721937f9ecce235d6ea6448cb02fa6ea0520381cc554566098e2577db221d"
+      },
+      "name": "Connect-4",
+      "uci_id": 26
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5542,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_27.json",
+        "sha256": "c7f96505f760bccbcc40b629ff0e6ace77c0dde73904ccc14cc258527f17f8ba"
+      },
+      "name": "Credit Approval",
+      "uci_id": 27
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5048,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_28.json",
+        "sha256": "6a8d8aceda6e4ee632e45b864471f5d11f5a20bd7919e5391df25f12ff9dba06"
+      },
+      "name": "Japanese Credit Screening",
+      "uci_id": 28
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4908,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_29.json",
+        "sha256": "2f25f633aed227a3485322207d8d10b473dc3d9d49c32fdcf6e76d21e16958b1"
+      },
+      "name": "Computer Hardware",
+      "uci_id": 29
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4894,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_30.json",
+        "sha256": "c325dc0747bf53db578d98127f09d97abc36eee63f117f57dfc4b0f0701242f2"
+      },
+      "name": "Contraceptive Method Choice",
+      "uci_id": 30
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 17031,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_31.json",
+        "sha256": "689c3ef515f7839d37fe235153d04daaf95a521cabe4e8e7526fefb9ea14871f"
+      },
+      "name": "Covertype",
+      "uci_id": 31
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 13324,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_32.json",
+        "sha256": "77f3ed6189ae5c3c01baac60ce94783433aefd44988d863b5e082d2019dcd150"
+      },
+      "name": "Cylinder Bands",
+      "uci_id": 32
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 12917,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_33.json",
+        "sha256": "cfa4fad3868fc76d766d6014754668f05a00467ae01b9c8e10be8d148484e444"
+      },
+      "name": "Dermatology",
+      "uci_id": 33
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6582,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_38.json",
+        "sha256": "dd94b96d1f1d8f40a1ff5cb26b3952bcc4b6dc045bfb43e9f453e1702b552658"
+      },
+      "name": "Echocardiogram",
+      "uci_id": 38
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5579,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_39.json",
+        "sha256": "d57a45f4c3eb1cec68c8e8294413289955820c1c44645bbd1eedecabe85df907"
+      },
+      "name": "Ecoli",
+      "uci_id": 39
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10167,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_40.json",
+        "sha256": "ea616b30393b73d938293f527c22043b4f305eb9d4e21a7e41f705be77e554a4"
+      },
+      "name": "Flags",
+      "uci_id": 40
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5469,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_42.json",
+        "sha256": "ea03f1081bc9b0e278354f158971169eba99bba9b44616a1f4415aca84f09469"
+      },
+      "name": "Glass Identification",
+      "uci_id": 42
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 2805,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_43.json",
+        "sha256": "86cc8058c047e56709120c60c0d81f790147d0e7be24a66d0a9874346cc9c6fd"
+      },
+      "name": "Haberman's Survival",
+      "uci_id": 43
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4232,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_44.json",
+        "sha256": "04bf1a9117c32dcc7fe7875d83061ae7e70aeb43e5307c097027bb4ccca17033"
+      },
+      "name": "Hayes-Roth",
+      "uci_id": 44
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 11487,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_45.json",
+        "sha256": "447888b6befe2a979f99fc9c88121e18efd668fcdf993f915ce09c92b7273d6c"
+      },
+      "name": "Heart Disease",
+      "uci_id": 45
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7392,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_46.json",
+        "sha256": "cd3621afb48f074806f4ffb16baabcf1af0342da0822696323a7db7eb0766e52"
+      },
+      "name": "Hepatitis",
+      "uci_id": 46
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 16654,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_47.json",
+        "sha256": "21e3cd13029c683ad05b5fa6315a68049c49e5a87b543585ca0a772ef697606e"
+      },
+      "name": "Horse Colic",
+      "uci_id": 47
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8637,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_50.json",
+        "sha256": "2f86efdf4ea69875877e5687ac35c884dd9054610aea67c9132352285eb149be"
+      },
+      "name": "Image Segmentation",
+      "uci_id": 50
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10238,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_52.json",
+        "sha256": "708732be55410064a0a5c4d76585db70d5da9aed9b9c751d60e3d1ab6c3054f1"
+      },
+      "name": "Ionosphere",
+      "uci_id": 52
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3823,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_53.json",
+        "sha256": "9566b7d979c84ec83349606ad3600825cdfb46f479eddd35a8129c69d516ac8a"
+      },
+      "name": "Iris",
+      "uci_id": 53
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 143022,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_54.json",
+        "sha256": "09deb5ae5d1476f2edc0ca6bd1009c99944b5454150b0642d3f4fd7568471d7b"
+      },
+      "name": "ISOLET",
+      "uci_id": 54
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3004,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_58.json",
+        "sha256": "f68d0d981b8c2e16a53b4d60e9ba0fb07ad5b18f0e031c7335eccd2c4c82ed50"
+      },
+      "name": "Lenses",
+      "uci_id": 58
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6862,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_59.json",
+        "sha256": "637b75c1a6eda124350fe93a77137c4f1dc65c5233794231732934259c4c8d90"
+      },
+      "name": "Letter Recognition",
+      "uci_id": 59
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4653,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_60.json",
+        "sha256": "221c147f4195c5e31ab0ff3191feb1a225fa1b9e09bb0b0cde5de004656f82f1"
+      },
+      "name": "Liver Disorders",
+      "uci_id": 60
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 15122,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_62.json",
+        "sha256": "db23c01f256e364515d15580345cf72d6886eb9b0a7d57c16e4f0f88c068b8b1"
+      },
+      "name": "Lung Cancer",
+      "uci_id": 62
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7278,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_63.json",
+        "sha256": "3ba31efe3682fd09931d9a367d6b775af01ab572d4e3f90c26a1d5bba82b78c1"
+      },
+      "name": "Lymphography",
+      "uci_id": 63
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 17074,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_69.json",
+        "sha256": "7d9ce470eb80b9dc8cfaf84b534dca59e7334eba014c4e1b79b735152d9b4396"
+      },
+      "name": "Molecular Biology (Splice-junction Gene Sequences)",
+      "uci_id": 69
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5200,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_70.json",
+        "sha256": "52f6748d0dcf8260335340a728353005b63bcd28d8c14202af34083e7bec3eae"
+      },
+      "name": "MONK's Problems",
+      "uci_id": 70
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10020,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_73.json",
+        "sha256": "0e71d323caff2fb05b11b47ef72dc44eaa1eeeccdd9fad0294e489dda4288127"
+      },
+      "name": "Mushroom",
+      "uci_id": 73
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 40285,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_74.json",
+        "sha256": "1677c2ef50066ff115eb7d22415a5c39407de264bef6ff6ae10dd69671ad1d15"
+      },
+      "name": "Musk (Version 1)",
+      "uci_id": 74
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 40854,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_75.json",
+        "sha256": "fd8e61e473f6234bb8da2bbfb362fecf0005ba7e13f562b29149b8a1fcd634ca"
+      },
+      "name": "Musk (Version 2)",
+      "uci_id": 75
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6750,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_76.json",
+        "sha256": "acc1517e6632059f2aa7a29c5584bd1a287977c646c71045c496523bd3f1482f"
+      },
+      "name": "Nursery",
+      "uci_id": 76
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5387,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_78.json",
+        "sha256": "f44d0b241c9b58e3fe6cce82b3d13bd3c3903ae529eaff3656d4b5c945779802"
+      },
+      "name": "Page Blocks Classification",
+      "uci_id": 78
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 17189,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_80.json",
+        "sha256": "c88e2971dbc6827df78a865f9cc8d1c5bbb082cc068f48c1e04fcb1531b5f35f"
+      },
+      "name": "Optical Recognition of Handwritten Digits",
+      "uci_id": 80
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8204,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_81.json",
+        "sha256": "f255c4b2c94b3117fcf2dcf33ada830f7ee2624df2dc1acbe09a13ba5a71533c"
+      },
+      "name": "Pen-Based Recognition of Handwritten Digits",
+      "uci_id": 81
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5254,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_82.json",
+        "sha256": "ad375393dc8c4714b77d522784c47a34e0af8c488d5fc7e61b628aa3f31d4a0f"
+      },
+      "name": "Post-Operative Patient",
+      "uci_id": 82
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6612,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_83.json",
+        "sha256": "84d8de1852708ba9ee04920c39b08dd425ccdc80ee2b3e623840831406339ebc"
+      },
+      "name": "Primary Tumor",
+      "uci_id": 83
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3361,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_87.json",
+        "sha256": "5bdea5fc30062ac146a22abdb0c39f66e5a20b01b04c3a025bd42a142a591de8"
+      },
+      "name": "Servo",
+      "uci_id": 87
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3289,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_88.json",
+        "sha256": "8bf7cc80416cf73280d09479082103cb322172cb3040275aa4cfba8a7cd2791c"
+      },
+      "name": "Shuttle Landing Control",
+      "uci_id": 88
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6449,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_89.json",
+        "sha256": "628a183cf4695348442bce8d827153fa18151f9d7bf24ffbb63cd7be940f49d0"
+      },
+      "name": "Solar Flare",
+      "uci_id": 89
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 12683,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_90.json",
+        "sha256": "8326b3f69b20f8b7893b9a12e835a1266efc26801d746d671075b515bb5892da"
+      },
+      "name": "Soybean (Large)",
+      "uci_id": 90
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 12751,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_91.json",
+        "sha256": "21e4b3f84cade491d9238bb3a06fd1409897929ab51aaa82566ca12cea54f86f"
+      },
+      "name": "Soybean (Small)",
+      "uci_id": 91
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4886,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_92.json",
+        "sha256": "c0d331b9639393a2a3ca63a41caf1be1a71cfc4b6e87933a2d1af0d383fcedce"
+      },
+      "name": "Challenger USA Space Shuttle O-Ring",
+      "uci_id": 92
+    },
+    {
+      "eligible": true,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 17464,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_94.json",
+        "sha256": "fdd2fc43f66c9e363e24fe2de8e6bd8c3792f0917031eb7bbaafe333a1566039"
+      },
+      "name": "Spambase",
+      "uci_id": 94
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 9110,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_95.json",
+        "sha256": "5e907e08e65f5f065942f63318c30da66b8bd6a3c382f1ebc7fed70fefcb62a9"
+      },
+      "name": "SPECT Heart",
+      "uci_id": 95
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 14680,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_96.json",
+        "sha256": "d01a7d9784f6f8f96c6c7bab160c74549e211ac6de747527517d7888fe7a47d7"
+      },
+      "name": "SPECTF Heart",
+      "uci_id": 96
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4536,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_101.json",
+        "sha256": "52d2c11116c40c46ae8b26c7b077fa0239d0594b3230befb202bd903156cfbb9"
+      },
+      "name": "Tic-Tac-Toe Endgame",
+      "uci_id": 101
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6517,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_105.json",
+        "sha256": "c1ea316c73b3a21031c402167b553eb7483b2de047d65aebae32fa662d8d9d04"
+      },
+      "name": "Congressional Voting Records",
+      "uci_id": 105
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6697,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_107.json",
+        "sha256": "0cd1eb769f36080cfd2f6a8513decd1a21625f9d94b17c36d89c188560a08011"
+      },
+      "name": "Waveform Database Generator (Version 1)",
+      "uci_id": 107
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6311,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_109.json",
+        "sha256": "9e66d6529656ccca35b74730331563fc7116095b1b1556500083696428cba629"
+      },
+      "name": "Wine",
+      "uci_id": 109
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4826,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_110.json",
+        "sha256": "1dd5dfa24cf28dfba4229af9f4efbe1703fc957e66d76f4fcd3fb8d772667c09"
+      },
+      "name": "Yeast",
+      "uci_id": 110
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6036,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_111.json",
+        "sha256": "0f565181758ab6220dc723748c4182cd7899cb82ee3552d80c63500337a20901"
+      },
+      "name": "Zoo",
+      "uci_id": 111
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 22884,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_116.json",
+        "sha256": "4a2273cbcedd8b7bc30d1428cdc89956ae64402c1aa207a449efbc80a3f6d4d1"
+      },
+      "name": "US Census Data (1990)",
+      "uci_id": 116
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 14785,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_117.json",
+        "sha256": "404e4cdf1270ec1acaebd562a7ceef125ae8dac1908e8df2443f5e1dbbb917a5"
+      },
+      "name": "Census-Income (KDD)",
+      "uci_id": 117
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 9896,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_122.json",
+        "sha256": "f5ed63efe30c2c33a2c238aea6ce972be8a5852b20d0041cfa9c4e5cafacc987"
+      },
+      "name": "El Nino",
+      "uci_id": 122
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5958,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_143.json",
+        "sha256": "fbc001b6881fb2c8e3dabbb6d4e32668058c0949fdabf5001b60ae17bb32f0b3"
+      },
+      "name": "Statlog (Australian Credit Approval)",
+      "uci_id": 143
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 11280,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_144.json",
+        "sha256": "4db96cd601cb2752875399ffaa0ba7f669692fb7796c26cf960d58a79f836dd8"
+      },
+      "name": "Statlog (German Credit Data)",
+      "uci_id": 144
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6045,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_145.json",
+        "sha256": "ddc86a46314707288a285ce25f1a28465fa8bfc3a5cc6ffe57847cd8483555a9"
+      },
+      "name": "Statlog (Heart)",
+      "uci_id": 145
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 12860,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_146.json",
+        "sha256": "957645112fa9ccc84f9a15ec14a81b86b13cba8c93b6d6fe3eea9970751d4eb0"
+      },
+      "name": "Statlog (Landsat Satellite)",
+      "uci_id": 146
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7756,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_147.json",
+        "sha256": "b88050c85d5a945c311e72591d3b22330ade01480d104618e2b79c70ab03be34"
+      },
+      "name": "Statlog (Image Segmentation)",
+      "uci_id": 147
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3911,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_148.json",
+        "sha256": "97dca15db0bcd9727b2a0dc174aa859c17efddb129ca681282d27eb7d8f06c28"
+      },
+      "name": "Statlog (Shuttle)",
+      "uci_id": 148
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 11832,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_149.json",
+        "sha256": "cc095d18e2197f761eae3f8d1e99260c54d720d652053184b58d5081249047da"
+      },
+      "name": "Statlog (Vehicle Silhouettes)",
+      "uci_id": 149
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 16248,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_151.json",
+        "sha256": "07060cde0c0618293c26324dbd93621ca16fbfce98e6a9d04933e2ccbb68318e"
+      },
+      "name": "Connectionist Bench (Sonar, Mines vs. Rocks)",
+      "uci_id": 151
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4647,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_155.json",
+        "sha256": "fad381520eb4bcc0d35d9c1510fb79a9a26a08c8c7987b76349a9bfb0167a120"
+      },
+      "name": "Cloud",
+      "uci_id": 155
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5771,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_158.json",
+        "sha256": "99db8c6665c053d5ee1af1a9c5bdb686a0325873eb2cabde4c64403b2f46f1dc"
+      },
+      "name": "Poker Hand",
+      "uci_id": 158
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 8169,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_159.json",
+        "sha256": "6de5004ace47ee62f4f51c1a82e1dc676fa06a9e1eeb671bc2c2e4c87ebd3524"
+      },
+      "name": "MAGIC Gamma Telescope",
+      "uci_id": 159
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5766,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_161.json",
+        "sha256": "ea1db0d4960eac7e57fcfa6c5653fae9d6f3e66550ce1da0e0b46f8a0f1753f2"
+      },
+      "name": "Mammographic Mass",
+      "uci_id": 161
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7553,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_162.json",
+        "sha256": "f257f8bf3abb299b7e880fedf42fc45105eb51a1efc1c7de59457206b4447d58"
+      },
+      "name": "Forest Fires",
+      "uci_id": 162
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5305,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_165.json",
+        "sha256": "a423a68f73bd974d2ee2a4287ecebbcab035a84535056546a4b7464deb13ef1c"
+      },
+      "name": "Concrete Compressive Strength",
+      "uci_id": 165
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 20197,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_172.json",
+        "sha256": "96feb452629365a78e4e36e7a850bd6440e6a587905615c8fea6ce83a4bab733"
+      },
+      "name": "Ozone Level Detection",
+      "uci_id": 172
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 9137,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_174.json",
+        "sha256": "036055f56cc2f507404e8ff1d5187f2bf3c58fc9ac40c65bf2d7b106a4be2972"
+      },
+      "name": "Parkinsons",
+      "uci_id": 174
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5199,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_176.json",
+        "sha256": "0bb9b52fd2dab119116f3236cb04840e377f145d485be7adcfbe5538e37de17e"
+      },
+      "name": "Blood Transfusion Service Center",
+      "uci_id": 176
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 58776,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_183.json",
+        "sha256": "36851dd2c3cbb89eb57295c072c40508630bb18b24fe38d5e20e76fa8f064b44"
+      },
+      "name": "Communities and Crime",
+      "uci_id": 183
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6713,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_184.json",
+        "sha256": "ce863f2e3d73244ed2d01269c2406add7b0c302cb166eb59789a95bed5910c9b"
+      },
+      "name": "Acute Inflammations",
+      "uci_id": 184
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6363,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_186.json",
+        "sha256": "8ac6aae4086a802446e7448cf643142b9b4cfad6ce2de736a7afbd3dc75ccb05"
+      },
+      "name": "Wine Quality",
+      "uci_id": 186
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10511,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_189.json",
+        "sha256": "98065454b835a0ad1c75716a3bb17280a050e50b2d6454b5f18ccad06a142914"
+      },
+      "name": "Parkinsons Telemonitoring",
+      "uci_id": 189
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7766,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_193.json",
+        "sha256": "615a2a9eef6618e836dc5ac5024bb2a9e8d895cc412ee9ad9e529e42ddc44bb1"
+      },
+      "name": "Cardiotocography",
+      "uci_id": 193
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 9901,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_198.json",
+        "sha256": "bed3062dd2650d56c6b55a5369e769075d3a92bdb309a2d923c469aae080f8f4"
+      },
+      "name": "Steel Plates Faults",
+      "uci_id": 198
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 70332,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_211.json",
+        "sha256": "1b9c24cd50f1fbf59547e17d3859cb507624c4cee395046f21a17f334a6552b2"
+      },
+      "name": "Communities and Crime Unnormalized",
+      "uci_id": 211
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4282,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_212.json",
+        "sha256": "c74fdacfdd537a287b9656d82074f73e6d0737898e1995aaff326613ad2d0c3e"
+      },
+      "name": "Vertebral Column",
+      "uci_id": 212
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 10242,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_222.json",
+        "sha256": "c1ae107717f1c80652876f857fde849ea92cb74b747ea9e9439910833e8f3ea8"
+      },
+      "name": "Bank Marketing",
+      "uci_id": 222
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 6637,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_225.json",
+        "sha256": "a43be3419bfbfa710ad20d3527c4bfb9621b16b17c9d64a4c238fe77eabcfe04"
+      },
+      "name": "ILPD (Indian Liver Patient Dataset)",
+      "uci_id": 225
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 2998,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_229.json",
+        "sha256": "3ee31555a536f5710f390c52f00c1ab6e151027823928fe6f219ef0c0f44ba5c"
+      },
+      "name": "Skin Segmentation",
+      "uci_id": 229
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5294,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_235.json",
+        "sha256": "a31323c13df352a59693d5bb9eb1f1480717b97d40376e2ee9389d9832a51c5e"
+      },
+      "name": "Individual Household Electric Power Consumption",
+      "uci_id": 235
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5368,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_242.json",
+        "sha256": "c50b2beac2dd2ff06e97c8b6780fba5d1983b2de5d39625f03edcc48803c5bfe"
+      },
+      "name": "Energy Efficiency",
+      "uci_id": 242
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5190,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_244.json",
+        "sha256": "28065c800189de84abd21fedf6ee4e254b9f8f2d5de84bc478a49f12be8103fd"
+      },
+      "name": "Fertility",
+      "uci_id": 244
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4626,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_247.json",
+        "sha256": "8f4a85b2b66ddb6557953b920a5164b597b227543aa7e358a40756455a5462fa"
+      },
+      "name": "ISTANBUL STOCK EXCHANGE",
+      "uci_id": 247
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4373,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_257.json",
+        "sha256": "ef1bcbdd9386bc22bd556a8de9ff5f1e1ffabfb3aca2aaefc0b95fe412f68cb4"
+      },
+      "name": "User Knowledge Modeling",
+      "uci_id": 257
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5049,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_264.json",
+        "sha256": "d9c84b05c46c73c8403918e1ec17408ac73f5c690d92df037c3f558f044ed656"
+      },
+      "name": "EEG Eye State",
+      "uci_id": 264
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3257,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_267.json",
+        "sha256": "a6cf328522659f8d79d655267f4cae62fbd1195e2df6d0935ae1a989d34a7935"
+      },
+      "name": "Banknote Authentication",
+      "uci_id": 267
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 37935,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_270.json",
+        "sha256": "0b852c6b3915ea07e5ad3ca6d4af8c01f52d3d458b98bf96816b66c08bbbc5c1"
+      },
+      "name": "Gas Sensor Array Drift at Different Concentrations",
+      "uci_id": 270
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 9039,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_275.json",
+        "sha256": "d83e8ab95c63e9f3055e7dc8ebbab1a6ffe82d93d1bbd438f2349e2b72b333e9"
+      },
+      "name": "Bike Sharing",
+      "uci_id": 275
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 10105,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_277.json",
+        "sha256": "43801e9f921dcde5ac0b9ea1a5a83ccb26d2a0bb452536ac82e2dbb8386ddd3f"
+      },
+      "name": "Thoracic Surgery Data",
+      "uci_id": 277
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3365,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_291.json",
+        "sha256": "7fe167f096a5ae73b809e7cc3e746f9b81a8f8df02b2f5dcd734b8aa55206432"
+      },
+      "name": "Airfoil Self-Noise",
+      "uci_id": 291
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4343,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_292.json",
+        "sha256": "9d0107ec0d483d0fccec9f5ccc939a848e932a27b2336c69745edae90f2e67ba"
+      },
+      "name": "Wholesale customers",
+      "uci_id": 292
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4901,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_294.json",
+        "sha256": "52fbdc58fdd796210dc7bf0810b795b2a3b50c3262f659d4a1f9068d66d77b98"
+      },
+      "name": "Combined Cycle Power Plant",
+      "uci_id": 294
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 24854,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_296.json",
+        "sha256": "b652557e34c82c9a7695a62339e3951526ecb9990ab98f17d385389a8e88f4b1"
+      },
+      "name": "Diabetes 130-US Hospitals for Years 1999-2008",
+      "uci_id": 296
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 13904,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_300.json",
+        "sha256": "7262df62c48b6ef14d56427f27b49c11470edd1d2199c273633a2419d1be27ac"
+      },
+      "name": "Tennis Major Tournament Match Statistics",
+      "uci_id": 300
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8579,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_312.json",
+        "sha256": "10b3b14d94a8127ec6226d314ad2623d2cebe3cac5542be0691c0341ed6f8db9"
+      },
+      "name": "Dow Jones Index",
+      "uci_id": 312
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 15672,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_320.json",
+        "sha256": "da7e13a2b68580b4b25d77e178ce7eab0f36b0e2f0477ec2ec4601e843f5a5a7"
+      },
+      "name": "Student Performance",
+      "uci_id": 320
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 9793,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_327.json",
+        "sha256": "1da1386428307d42651e2ef28b4fe72c26961180723a88a7f5837d11ead43fc2"
+      },
+      "name": "Phishing Websites",
+      "uci_id": 327
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 9118,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_329.json",
+        "sha256": "f47d3f46bd0f5cffc022f8f321666ab97157b146fad2591f7d4ae2b88de0ac81"
+      },
+      "name": "Diabetic Retinopathy Debrecen",
+      "uci_id": 329
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 21650,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_332.json",
+        "sha256": "fa7aaf2ef873922c503d53db5bfe80ee7b1dcad90082b2c86b14935d5e5b2f89"
+      },
+      "name": "Online News Popularity",
+      "uci_id": 332
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 9488,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_336.json",
+        "sha256": "9c8ad2a8aabc6f97fdf3fd6b367a3ee0903227154789799f884a431283bf3cec"
+      },
+      "name": "Chronic Kidney Disease",
+      "uci_id": 336
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 22555,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_342.json",
+        "sha256": "26514812e1baed8f0adfb66103dba32a0051deb04d1fbed98398065afbe354de"
+      },
+      "name": "Mice Protein Expression",
+      "uci_id": 342
+    },
+    {
+      "eligible": true,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 10135,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_350.json",
+        "sha256": "ef47d92de56ee68b4a05c85b6caa2e43bcd4f678609bf2c3b08426160d5065c3"
+      },
+      "name": "Default of Credit Card Clients",
+      "uci_id": 350
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5382,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_352.json",
+        "sha256": "553a74e0d035934fe7919c4fe591859e49dab53f6797e261be1ec98204a5b58a"
+      },
+      "name": "Online Retail",
+      "uci_id": 352
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 4531,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_357.json",
+        "sha256": "2363c4c63e7ab54f1664d27a51cfdf4b6a475629d5615de214e1131273834ce2"
+      },
+      "name": "Occupancy Detection ",
+      "uci_id": 357
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8140,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_360.json",
+        "sha256": "738213720094dc023cc72fcf7057a2ba8182cece38e180a6a49ef6caab5bf282"
+      },
+      "name": "Air Quality",
+      "uci_id": 360
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 21662,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_365.json",
+        "sha256": "ac6d691ae092d9f1953ae38c995254c1449d61fdcb38408c6c3c853c8a976f7d"
+      },
+      "name": "Polish Companies Bankruptcy",
+      "uci_id": 365
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 27811,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_367.json",
+        "sha256": "be6a782b8943d5276833158282bd3882633e4390e5431cbf4e88db64de79ac49"
+      },
+      "name": "Dota2 Games Results",
+      "uci_id": 367
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6899,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_368.json",
+        "sha256": "ee1de42c0a29b2c5c26a8540f773e030a72cbc48252496623cebaa409ba768fb"
+      },
+      "name": "Facebook Metrics",
+      "uci_id": 368
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 8409,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_372.json",
+        "sha256": "c20bf3f72360a05e354ef70a0b6382cc5e0941270260012b7ab8b155d83129a9"
+      },
+      "name": "HTRU2",
+      "uci_id": 372
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 29456,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_373.json",
+        "sha256": "be7d90e488c47a2b6d5e7206a4e3d97f634703c88b07046012c5b325e980fd61"
+      },
+      "name": "Drug Consumption (Quantified)",
+      "uci_id": 373
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10979,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_374.json",
+        "sha256": "27d9fc33c6fb17c20368b72f36443748ec7fadea4c540fb76c04b9b55fac0e73"
+      },
+      "name": "Appliances Energy Prediction",
+      "uci_id": 374
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5512,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_379.json",
+        "sha256": "9b8161fe216a71ec311c836f517049677412c9e88c12b6c136252ace0c5aa447"
+      },
+      "name": "Website Phishing",
+      "uci_id": 379
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 3640,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_380.json",
+        "sha256": "9c076b4538956ce89020b0fbaed69a14fa3e7766fb974c4d86626a967da4ae60"
+      },
+      "name": "YouTube Spam Collection",
+      "uci_id": 380
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5418,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_381.json",
+        "sha256": "fa4c82b9b357ceb8be4d2f8b6dc18e6ab4792e579d808685b46fea032af5b872"
+      },
+      "name": "Beijing PM2.5",
+      "uci_id": 381
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 11828,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_383.json",
+        "sha256": "a69c93cb9d1140fceef10a1f53b4f3c994c0b861a7c9163b7bce7b23d2427e27"
+      },
+      "name": "Cervical Cancer (Risk Factors)",
+      "uci_id": 383
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8814,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_390.json",
+        "sha256": "2ffc59931ba35aa583213a3a0162b75a5ccd136a41799300251b45656dfc6499"
+      },
+      "name": "Stock Portfolio Performance",
+      "uci_id": 390
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 25902,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_396.json",
+        "sha256": "5423f8312331c4663a6bd1660726a749af1a20098514ce80c44ad37548a30b62"
+      },
+      "name": "Sales Transactions Weekly",
+      "uci_id": 396
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6312,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_409.json",
+        "sha256": "558cd59e4d1877c94d0be6f8be7a8e17f6f4caad4f3f13690df0c0398b4078ce"
+      },
+      "name": "Daily Demand Forecasting Orders",
+      "uci_id": 409
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 6239,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_419.json",
+        "sha256": "949e25a5a15fe6715928beef1221b2cdc9c2ca2cd17e1fae63af8b209a5e1a19"
+      },
+      "name": "Autistic Spectrum Disorder Screening Data for Children  ",
+      "uci_id": 419
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6167,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_426.json",
+        "sha256": "29982ca47a86c70d00a5492571ded28b38db4b328dcbbe4e0ff73a2ef0337df2"
+      },
+      "name": "Autism Screening Adult",
+      "uci_id": 426
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10758,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_445.json",
+        "sha256": "5fef62adbef830fadae73cdd40be92de97ca855d86fc25db207b97bc7f28bcdf"
+      },
+      "name": "Absenteeism at work",
+      "uci_id": 445
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4986,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_451.json",
+        "sha256": "8ae837fc7d6a1f347e57635ee9c7260ab2e3ebfdc50f043cbe1274c4f91284be"
+      },
+      "name": "Breast Cancer Coimbra",
+      "uci_id": 451
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5765,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_461.json",
+        "sha256": "35fbadaf3a2e95acf331eb220314a435b798b9e0f7b3e9b60a12a6e6b05c2879"
+      },
+      "name": "Drug Reviews (Druglib.com)",
+      "uci_id": 461
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 21632,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_464.json",
+        "sha256": "42fbd32b0dc4096303574d35f7e859c18931ac7ec7b47261c0890899ed7d39a6"
+      },
+      "name": "Superconductivty Data",
+      "uci_id": 464
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7725,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_467.json",
+        "sha256": "64f53b0e77f44dd8f803afbe3cf51be4a9675b2e86e5b46f8c4457a033ebdb91"
+      },
+      "name": "Student Academics Performance",
+      "uci_id": 467
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 8584,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_468.json",
+        "sha256": "35c6c9f83b361c1339289c96677a599e56f41d3269eafcea504b0a97924206d5"
+      },
+      "name": "Online Shoppers Purchasing Intention Dataset",
+      "uci_id": 468
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5582,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_471.json",
+        "sha256": "7822329664806efba75f00b503934459daa8b28fd7234bd833f29199854bb122"
+      },
+      "name": "Electrical Grid Stability Simulated Data ",
+      "uci_id": 471
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4996,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_477.json",
+        "sha256": "a8d2ff3f8724366bdb69a499ed0e94df4ca996c3eb8760614e186f7eae5586ee"
+      },
+      "name": "Real Estate Valuation",
+      "uci_id": 477
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5817,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_484.json",
+        "sha256": "5cb50031bb95a1771fd441f4d31b0b6bfc50755054ab6b5d30acb9dc3cad0fe1"
+      },
+      "name": "Travel Reviews",
+      "uci_id": 484
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 9108,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_485.json",
+        "sha256": "772967c8926788db851d0f6a518d54a123ead9a2a6000cc663df05ad3b8771d9"
+      },
+      "name": "Travel Review Ratings",
+      "uci_id": 485
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5294,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_488.json",
+        "sha256": "0aa4b1058a87c19c0e68ed9f827e4861256aef79bb883d94dd0acbe19734c6d9"
+      },
+      "name": "Facebook Live Sellers in Thailand",
+      "uci_id": 488
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4792,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_492.json",
+        "sha256": "39c7e6b5077d4cefde92fc87da7b00b6bdebe435182a0ea5c64335fc0ac97da1"
+      },
+      "name": "Metro Interstate Traffic Volume",
+      "uci_id": 492
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 10133,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_503.json",
+        "sha256": "b8ce27422c22c84f4351f5c4ab06dd1119443304e2a1aff5fe32a7537b9ce3c9"
+      },
+      "name": "Hepatitis C Virus (HCV) for Egyptian patients",
+      "uci_id": 503
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 6940,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_519.json",
+        "sha256": "899c70b6f9baed91ed46ff9cebd50311abd027ea8d6478b1d9495ef658155bf2"
+      },
+      "name": "Heart Failure Clinical Records",
+      "uci_id": 519
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 6529,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_529.json",
+        "sha256": "d8007be4b32e0557399d8fbe05ef55829ffbb27fa9c9afd5a3d895c0020fb7fd"
+      },
+      "name": "Early Stage Diabetes Risk Prediction",
+      "uci_id": 529
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7069,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_536.json",
+        "sha256": "56b10e24971efe73def9223d49623131be3c945f62e355543ecfb25f6044fcba"
+      },
+      "name": "Pedestrians in Traffic",
+      "uci_id": 536
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 6831,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_537.json",
+        "sha256": "5fb9120cc4437303255b11f8947fc5e1af215ac7bcdf65e99e598323518b4c9c"
+      },
+      "name": "Cervical Cancer Behavior Risk",
+      "uci_id": 537
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7223,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_544.json",
+        "sha256": "0c088b117802f9e41446641abe67ed947489095252545ede096ec1b456085919"
+      },
+      "name": "Estimation of Obesity Levels Based On Eating Habits and Physical Condition ",
+      "uci_id": 544
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5829,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_545.json",
+        "sha256": "32fff1543026f2bd2011fc5910d41ad06e6fcc6a4f4e0946c734fcf8be77462c"
+      },
+      "name": "Rice (Cammeo and Osmancik)",
+      "uci_id": 545
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6786,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_547.json",
+        "sha256": "175a5016082673da3f18c19129ea661c07cc5796e7a0bc257034130bb2e52aa6"
+      },
+      "name": "Algerian Forest Fires",
+      "uci_id": 547
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5893,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_551.json",
+        "sha256": "4a5a94797d666c55326a9404d336710568b311b7cbb839bbfa1cc38c8cab69b9"
+      },
+      "name": "Gas Turbine CO and NOx Emission Data Set",
+      "uci_id": 551
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7407,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_555.json",
+        "sha256": "55349d228fc61d85f8a27abd58e09a40e6a04528bf51921a7b540f6201426733"
+      },
+      "name": "Apartment for Rent Classified",
+      "uci_id": 555
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5575,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_560.json",
+        "sha256": "b31c16f51d0a7e7792b6cd3d8c040bf7048b7c1ad43c5946b79591b9231a9581"
+      },
+      "name": "Seoul Bike Sharing Demand",
+      "uci_id": 560
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5893,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_563.json",
+        "sha256": "5a71b58e09daeff9b95d002b2037b15c52c67d32d11c288dff163f9a296b9c5f"
+      },
+      "name": "Iranian Churn",
+      "uci_id": 563
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 18205,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_565.json",
+        "sha256": "616e3494348c4ea56e4bceb62603a22372b3a13bb82f2ee24a30ab0cf34ba55a"
+      },
+      "name": "Bone marrow transplant: children",
+      "uci_id": 565
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3044,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_567.json",
+        "sha256": "afcf6f988a602acb1e738891bd6c0afaac7de0a25159c0c4a1ac05dcb47438f0"
+      },
+      "name": "COVID-19 Surveillance",
+      "uci_id": 567
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5861,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_571.json",
+        "sha256": "5e73e0d816a3ad1470a4be86a108cb7a74f0415aa3a8ea40151dd163c8e4b18a"
+      },
+      "name": "HCV data",
+      "uci_id": 571
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 28067,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_572.json",
+        "sha256": "5c9b55cbd21446bc7ed9d166432d03502a52ea7a55913c1b984e8c29cb64bdac"
+      },
+      "name": "Taiwanese Bankruptcy Prediction",
+      "uci_id": 572
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 66580,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_579.json",
+        "sha256": "d2053615fd67887d1ee4027a4e723bc69b1efaa8e44e9c3279375f8acc546983"
+      },
+      "name": "Myocardial infarction complications",
+      "uci_id": 579
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5036,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_582.json",
+        "sha256": "08e2b939ab1c60cb87ac78911638036e1cc029b2c572afee4bbb85fde3375ef4"
+      },
+      "name": "Student Performance on an Entrance Examination",
+      "uci_id": 582
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 2870,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_591.json",
+        "sha256": "94ec20d33083506a1314d4304fd9012fb8a02665ed1332927c661dae2ba0ad59"
+      },
+      "name": "Gender by Name",
+      "uci_id": 591
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 7349,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_597.json",
+        "sha256": "44ea3831ed9c17f030bc7d9a3868966c24cd8bbf674438206979d2880ddee1d9"
+      },
+      "name": "Productivity Prediction of Garment Employees",
+      "uci_id": 597
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8068,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_601.json",
+        "sha256": "1644d99f2d4806651a1f445279d4305f1f09b2cdfc034679fdc113424df47603"
+      },
+      "name": "AI4I 2020 Predictive Maintenance Dataset",
+      "uci_id": 601
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8660,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_602.json",
+        "sha256": "cc404e7597bc9c0e530b1c69d849156a1da52790f5d3ea478f2cc3f8835de296"
+      },
+      "name": "Dry Bean",
+      "uci_id": 602
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 11347,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_603.json",
+        "sha256": "38a318cecf4c67d4aa893b4a223a433f56748db0c33bd3793fcb57e14e9c4d1e"
+      },
+      "name": "In-Vehicle Coupon Recommendation",
+      "uci_id": 603
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 23325,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_697.json",
+        "sha256": "ca1b0ffbd8d19b5df79f26108b207a472045a4b4f1c6b2227930aca7f02cfc53"
+      },
+      "name": "Predict Students' Dropout and Academic Success",
+      "uci_id": 697
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5398,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_713.json",
+        "sha256": "942fa74945e0ba554f0060f3064fbe203d546770f2c4876c2e5f1ecc2f6595bc"
+      },
+      "name": "Auction Verification",
+      "uci_id": 713
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 24188,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_722.json",
+        "sha256": "35ee8bfc55af5db2a11b402aceabe80cb593acb0acbb98a1d55b2948355f612e"
+      },
+      "name": "NATICUSdroid (Android Permissions)",
+      "uci_id": 722
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 268853,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_728.json",
+        "sha256": "d3af225f1496b012e3a6904bdbd484771ef84ff162284a5c1c1b355c206059bd"
+      },
+      "name": "Toxicity",
+      "uci_id": 728
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 106275,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_732.json",
+        "sha256": "348fa7bcbce769af9ee3805503345d771d801e364b817c49fbacb191baa8b006"
+      },
+      "name": "DARWIN",
+      "uci_id": 732
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 3941,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_755.json",
+        "sha256": "c996488170cdd861af330c24b2be364806c08c152c0094fa7854623a64a34f00"
+      },
+      "name": "Accelerometer Gyro Mobile Phone",
+      "uci_id": 755
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 12575,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_759.json",
+        "sha256": "e5bf62b90c5302abdc02725afdcda259e2da1a8ff50f75aee80371d88c1db25d"
+      },
+      "name": "Glioma Grading Clinical and Mutation Features",
+      "uci_id": 759
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6684,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_760.json",
+        "sha256": "f71d0490126a9ca308e1bd5ef881262dd803b5071c3a973b56f8f9e9999e04fe"
+      },
+      "name": "Multivariate Gait Data",
+      "uci_id": 760
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4466,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_763.json",
+        "sha256": "d0fa0ea470466797f7157ef7bfa2c85558256a52e51fec577b60e14f92574ec3"
+      },
+      "name": "Land Mines",
+      "uci_id": 763
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5854,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_799.json",
+        "sha256": "7d1f87f09232d87a987bdc2407d1a0c5f8775a65a408b2f0dd975f7b48e18e4f"
+      },
+      "name": "Single Elder Home Monitoring: Gas and Position",
+      "uci_id": 799
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 5381,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_827.json",
+        "sha256": "25af92d5eb967589f234bdf16c405caf501beb5a74f550a8541681d76948503b"
+      },
+      "name": "Sepsis Survival Minimal Clinical Records",
+      "uci_id": 827
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 9165,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_848.json",
+        "sha256": "ff7f343f352d8ae39680811ea252369a6806a75a2be4d09f43775e4211ac30b1"
+      },
+      "name": "Secondary Mushroom",
+      "uci_id": 848
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4746,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_849.json",
+        "sha256": "1e6d5c08255a45c6df964c26473a025b91bd98685c59106860d17c3b035d5f8a"
+      },
+      "name": "Power Consumption of Tetouan City",
+      "uci_id": 849
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5954,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_850.json",
+        "sha256": "b577a193c9b0d959c5016ee4f12815289c14e4fba34a9703e5ec885dd307a4f5"
+      },
+      "name": "Raisin",
+      "uci_id": 850
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 5657,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_851.json",
+        "sha256": "5c9b6d74c9ca5fb6fb2a98166a3bccbd29f0487adb519ca40541cb3da03f1a57"
+      },
+      "name": "Steel Industry Energy Consumption",
+      "uci_id": 851
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 12380,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_856.json",
+        "sha256": "5fb80282816c21d49aa1a2b2efbd43516db74c712a7251ad1bb6b7f0dd66df6e"
+      },
+      "name": "Higher Education Students Performance Evaluation",
+      "uci_id": 856
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 9287,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_857.json",
+        "sha256": "b5d4ed568d2b30ca65c1b0bce332c6c23880befb2d6c0fdd0545bb4011edc9f4"
+      },
+      "name": "Risk Factor Prediction of Chronic Kidney Disease",
+      "uci_id": 857
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 4263,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_863.json",
+        "sha256": "d83bc45c341e79d70804245f3f8cea99c5bc5294cfe19b5f0b0f2c1820e52bab"
+      },
+      "name": "Maternal Health Risk",
+      "uci_id": 863
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8878,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_864.json",
+        "sha256": "92e5abb8835168e73e3335bbf5e9848699f05bf148a0b5dd4f73581e896aa320"
+      },
+      "name": "Room Occupancy Estimation",
+      "uci_id": 864
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 9586,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_878.json",
+        "sha256": "783b4f589e42d2676dc90b14502124bfb5fbb340b733e4a02966acf7447bdc0d"
+      },
+      "name": "Cirrhosis Patient Survival Prediction",
+      "uci_id": 878
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 22717,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_880.json",
+        "sha256": "cd0a636d1a60201bc70afe62e950842a88c8d45bf33042a98c2faaa1aea5a41e"
+      },
+      "name": "SUPPORT2",
+      "uci_id": 880
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6011,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_887.json",
+        "sha256": "324434717abc0acf82c0788d8279ba1451df1b2801ed5d284b8d51e885232809"
+      },
+      "name": "National Health and Nutrition Health Survey 2013-2014 (NHANES) Age Prediction Subset",
+      "uci_id": 887
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 9707,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_890.json",
+        "sha256": "addd60d5fd47b88b50c73a50da688c1a8b858349ff658b1cbb9d31173dc877c6"
+      },
+      "name": "AIDS Clinical Trials Group Study 175",
+      "uci_id": 890
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": true,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": true
+      },
+      "metadata": {
+        "bytes": 10089,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_891.json",
+        "sha256": "68f14e4bdc9be4fa68eec2f064e5a8ebed033871e175f543c3e97add3e20bbdd"
+      },
+      "name": "CDC Diabetes Health Indicators",
+      "uci_id": 891
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": true,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8269,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_911.json",
+        "sha256": "8721790df85d4cb91a35fb70961c5fc11ea4686135f3eda6847194e64eaca6a0"
+      },
+      "name": "Recipe Reviews and User Feedback",
+      "uci_id": 911
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6745,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_913.json",
+        "sha256": "e92a901bbfa41e12a41e312a44dc1e9c82ef94762103342cea906625e48700eb"
+      },
+      "name": "Forty Soybean Cultivars from Subsequent Harvests",
+      "uci_id": 913
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 6236,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_915.json",
+        "sha256": "a05ba7c5c930caf8ee484e54d1a301f915ae35a0f0b69149c35b0ba101efa4c0"
+      },
+      "name": "Differentiated Thyroid Cancer Recurrence",
+      "uci_id": 915
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": false,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 13930,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_925.json",
+        "sha256": "393b5c6332ea281088f5974f34a525f0cda6c2ecdbc016e30517a2f24756ff91"
+      },
+      "name": "Infrared Thermography Temperature",
+      "uci_id": 925
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": false,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 8645,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_936.json",
+        "sha256": "3b3275ed18e6e77d19e3e41618a93e756b72063422ae98a99a6de2c08a2a3703"
+      },
+      "name": "National Poll on Healthy Aging (NPHA)",
+      "uci_id": 936
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": false,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 21049,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_938.json",
+        "sha256": "6e2b4b7129bc90b840f24ae9f133ce27b887ed994ca591514ca31f3255f7d104"
+      },
+      "name": "Regensburg Pediatric Appendicitis",
+      "uci_id": 938
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 23882,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_942.json",
+        "sha256": "cac3def74da86e04053dc7fbaadcaa8cd658e1076079fc695a31138e327e41a6"
+      },
+      "name": "RT-IoT2022 ",
+      "uci_id": 942
+    },
+    {
+      "eligible": false,
+      "gates": {
+        "all_predictors_numeric": false,
+        "classification_task": true,
+        "exact_official_static_csv": true,
+        "features_20_to_500": true,
+        "metadata_declares_no_missing": true,
+        "metadata_status_200": true,
+        "rows_4000_to_100000": false,
+        "single_metadata_binary_target": false
+      },
+      "metadata": {
+        "bytes": 15204,
+        "relative_path": "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_967.json",
+        "sha256": "43c189d8f547752c515b2612fda2a9c3f9578f7f3660c8490d18767d88fe68a9"
+      },
+      "name": "PhiUSIIL Phishing URL (Website)",
+      "uci_id": 967
+    }
+  ],
+  "schema": "cacl-oc-r4.5-frozen-metadata-screen-v1",
+  "screen_denominator": 208,
+  "screen_rule": {
+    "features": "20 to 500 inclusive; all Binary/Integer/Continuous/Real",
+    "missingness": "dataset, feature and target metadata all no",
+    "rows": "4000 to 100000 inclusive",
+    "target": "exactly one metadata Binary target",
+    "task": "Classification",
+    "transport": "exact official HTTPS static CSV URL"
+  },
+  "status": "NO_ADDITIONAL_UNTOUCHED_TASK_FROM_FROZEN_SCREEN"
+}
