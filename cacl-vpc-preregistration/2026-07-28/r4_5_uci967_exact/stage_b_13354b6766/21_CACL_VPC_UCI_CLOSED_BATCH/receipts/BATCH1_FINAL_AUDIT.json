@@ -1,0 +1,58 @@
+{
+  "artifact_hashes": {
+    "audit_code": "a42e768f6e7b4ec6f1cee093652aa30928039ab72efd47a45ca5e9ad4dbd231d",
+    "preparation_receipt": "f3a77c154b48c1aa34e60a3cbc8a43d8cecbcc16c299fccebae4983a3f4a35ba",
+    "selection_receipt": "1cea4be5a98866b680a33136212585692bc130898bf7e258f950b05ab18202a8"
+  },
+  "datasets": [
+    {
+      "preparation_status": "EXTERNAL_FAIL",
+      "reason": [
+        "target_cardinality_6"
+      ],
+      "source_route": null,
+      "target_pass": null,
+      "uci_id": 146
+    },
+    {
+      "preparation_status": "EXTERNAL_FAIL",
+      "reason": [
+        "target_cardinality_7"
+      ],
+      "source_route": null,
+      "target_pass": null,
+      "uci_id": 31
+    },
+    {
+      "preparation_status": "EXTERNAL_FAIL",
+      "reason": [
+        "target_cardinality_10"
+      ],
+      "source_route": null,
+      "target_pass": null,
+      "uci_id": 80
+    },
+    {
+      "preparation_status": "PREPARED_SOURCE_TARGET_SEALED",
+      "reason": null,
+      "source_route": "ABSTAIN",
+      "target_pass": null,
+      "uci_id": 365
+    }
+  ],
+  "datasets_replaced": false,
+  "external_failures": 3,
+  "gates": {
+    "minimum_two_source_compress": false,
+    "minimum_two_target_passes": false,
+    "no_replacement": true,
+    "registered_denominator_is_four": true
+  },
+  "interpretation": "Three registered draws were non-binary target schema failures and the sole compatible task source-routed to ABSTAIN. This is not evidence of CACL-VPC deployment failure; it exposes that binary cardinality was not resolved before the registered draw.",
+  "registered_denominator": 4,
+  "schema": "cacl-vpc-uci-batch1-final-audit-v1",
+  "source_compress": 0,
+  "status": "INCONCLUSIVE_EXTERNAL",
+  "target_passes": 0,
+  "thresholds_changed_after_results": false
+}
