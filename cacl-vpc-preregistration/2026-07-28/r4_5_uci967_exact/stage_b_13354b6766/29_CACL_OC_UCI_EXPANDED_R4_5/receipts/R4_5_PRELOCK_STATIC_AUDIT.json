@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "denominators_exact": true,
+    "no_r4_5_instance_or_scientific_outputs": true,
+    "path_escape_blocked": true,
+    "pre_stage_a_transport_blocked_before_network": true,
+    "prior_access_and_metadata_screen_valid": true,
+    "r4_2_lineage_valid": true,
+    "r4_3_lineage_valid": true,
+    "r4_4_alpha_retained": true,
+    "r4_4_lineage_valid": true,
+    "scientific_function_ast_identical": true
+  },
+  "metadata_screen_sha256": "af6798e0368cf596a949ad701148b71c7614f0d20f0bde7c522a3985dac8ce25",
+  "prior_access_audit_sha256": "2d3472db48135513f192714d185b3dfce18f01b66430b3fedf8d5f7021049b4b",
+  "r4_4_engine_sha256": "6b2bb94921aa5fef64a01d1ad5e4eb0f99413ed31aded3be196ba6953457aed9",
+  "r4_5_engine_sha256": "954370ab0c7861e621b68e4c70fcfc0717b37887659b05915decc95976eeb5b8",
+  "schema": "cacl-oc-r4.5-prelock-static-audit-v1",
+  "scientific_function_ast_checks": {
+    "certificate": true,
+    "cp_lower": true,
+    "cp_upper": true,
+    "deterministic_group_representatives": true,
+    "direct_actions": true,
+    "exact_feature_group_ids": true,
+    "feasibility_frontier": true,
+    "group_disjoint_source_splits": true,
+    "hash_order": true,
+    "query_actions_masks_and_costs": true,
+    "selection_key": true,
+    "tree_model": true
+  },
+  "status": "R4_5_PRELOCK_STATIC_AUDIT_PASS"
+}
