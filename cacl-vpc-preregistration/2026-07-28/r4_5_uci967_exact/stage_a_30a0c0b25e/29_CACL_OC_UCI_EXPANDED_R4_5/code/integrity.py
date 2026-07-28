@@ -539,7 +539,604 @@ def validate_prior_access_audit(
                     for value in features + targets
                 )
             ),
-            "exact_official_static_c…6234 tokens truncated…stamp-ack-v1",
+            "exact_official_static_csv": (
+                metadata.get("data_url")
+                == (
+                    "https://archive.ics.uci.edu/static/public/"
+                    f"{dataset_id}/data.csv"
+                )
+            ),
+        }
+        recomputed_eligible = all(recomputed_gates.values())
+        if recomputed_eligible:
+            independently_eligible_ids.append(dataset_id)
+        screen_row_checks.append(
+            row.get("uci_id") == dataset_id
+            and row.get("name") == metadata.get("name")
+            and row.get("gates") == recomputed_gates
+            and row.get("eligible") is recomputed_eligible
+        )
+
+    screen_instance_evidence_checks: dict[str, bool] = {}
+    exact_instance_paths = {
+        "94": (
+            "14_CACL_THREE_CYCLE_EXTENSION/closing_spambase/"
+            "source_data/uci_94_spambase.zip"
+        ),
+        "350": (
+            "13_CACL_1_0_CONSOLIDATION/operational_final/"
+            "source_data/uci_350_credit_default.zip"
+        ),
+    }
+    for dataset_id, relative in exact_instance_paths.items():
+        expected = screen.get("prior_instance_evidence", {}).get(
+            dataset_id, {}
+        )
+        candidate = _safe_package_path(relative)
+        screen_instance_evidence_checks[dataset_id] = (
+            expected.get("relative_path") == relative
+            and candidate.is_file()
+            and candidate.stat().st_size == expected.get("bytes")
+            and sha256(candidate) == expected.get("sha256")
+        )
+    screen_binding = audit.get("metadata_screen", {})
+    checks = {
+        "schema": (
+            audit.get("schema")
+            == "cacl-oc-r4.5-prior-access-audit-v1"
+        ),
+        "status": (
+            audit.get("status")
+            == "NO_RECORDED_UCI967_INSTANCE_TRACE_FOUND"
+        ),
+        "candidate_ids": audit.get("candidate_ids") == NEW_IDS == [967],
+        "declared_checks_all_true": (
+            isinstance(audit.get("checks"), dict)
+            and bool(audit["checks"])
+            and all(audit["checks"].values())
+            and audit.get("passes") is True
+        ),
+        "evidence_complete_and_current": (
+            bool(evidence_checks) and all(evidence_checks.values())
+        ),
+        "path_audit_exact": (
+            audit.get("candidate_path_hits")
+            == audit.get("allowed_metadata_paths")
+            == [
+                (
+                    "21_CACL_VPC_UCI_CLOSED_BATCH/registry_snapshot/"
+                    "metadata/uci_967.json"
+                ),
+                (
+                    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/"
+                    "registry_snapshot/metadata/uci_967.json"
+                ),
+            ]
+        ),
+        "metadata_screen_binding_exact": (
+            screen_binding
+            == {
+                "relative_path": str(
+                    screen_path.relative_to(PACKAGE)
+                ).replace("\\", "/"),
+                "bytes": screen_path.stat().st_size,
+                "sha256": sha256(screen_path),
+            }
+        ),
+        "metadata_screen_schema_status": (
+            screen.get("schema")
+            == "cacl-oc-r4.5-frozen-metadata-screen-v1"
+            and screen.get("status")
+            == "NO_ADDITIONAL_UNTOUCHED_TASK_FROM_FROZEN_SCREEN"
+            and screen.get("screen_denominator") == 208
+            and screen.get("metadata_eligible_ids") == [94, 350]
+            and screen.get(
+                "eligible_ids_with_recorded_instance_artifacts"
+            )
+            == [94, 350]
+            and screen.get("additional_selected_ids") == []
+            and screen.get("carry_forward_outside_screen", {}).get(
+                "uci_id"
+            )
+            == 967
+        ),
+        "metadata_screen_manifest_current": screen_manifest_current,
+        "metadata_screen_rows_independently_recomputed": (
+            len(screen_row_checks) == 208
+            and all(screen_row_checks)
+            and independently_eligible_ids == [94, 350]
+        ),
+        "metadata_screen_instance_evidence_current": (
+            set(screen_instance_evidence_checks) == {"94", "350"}
+            and all(screen_instance_evidence_checks.values())
+        ),
+        "claim_boundary_present": (
+            isinstance(audit.get("claim_boundary"), str)
+            and "not proof of absolute non-access"
+            in audit["claim_boundary"]
+        ),
+    }
+    current_path_hits: list[str] | None = None
+    if recompute_current_census:
+        current_path_hits = _current_candidate_path_hits()
+        checks["current_prelock_path_census_exact"] = (
+            current_path_hits == audit.get("candidate_path_hits")
+        )
+    result = {
+        "checks": checks,
+        "evidence_checks": evidence_checks,
+        "screen_instance_evidence_checks": (
+            screen_instance_evidence_checks
+        ),
+        "passes": all(checks.values()),
+        "sha256": sha256(path),
+        "screen_sha256": sha256(screen_path),
+        "declared_path_hits": audit.get("candidate_path_hits"),
+        "current_path_hits": current_path_hits,
+    }
+    if not result["passes"]:
+        failed = [name for name, value in checks.items() if not value]
+        raise RuntimeError(
+            "R4.5 prior-access audit validation failed: "
+            + ", ".join(failed)
+        )
+    return result
+
+
+def validate_prelock_static_audit() -> dict[str, Any]:
+    """Require the V2 PASS receipt and rehash every file it exercised."""
+
+    v1_path = RECEIPTS / "R4_5_PRELOCK_STATIC_AUDIT.json"
+    v2_path = RECEIPTS / "R4_5_PRELOCK_STATIC_AUDIT_V2.json"
+    if not v1_path.is_file() or not v2_path.is_file():
+        raise RuntimeError("R4.5 prelock V1/V2 receipt is absent")
+    v1 = read_json(v1_path)
+    v2 = read_json(v2_path)
+    predecessor = v2.get("predecessor_v1", {})
+    bound_checks: dict[str, bool] = {}
+    for relative, expected in v2.get("bound_files", {}).items():
+        candidate = _safe_package_path(str(relative))
+        bound_checks[str(relative)] = (
+            isinstance(expected, dict)
+            and candidate.is_file()
+            and candidate.stat().st_size == expected.get("bytes")
+            and sha256(candidate) == expected.get("sha256")
+        )
+    prior = validate_prior_access_audit(
+        recompute_current_census=True
+    )
+    checks = {
+        "v1_preserved_pass": (
+            v1.get("schema")
+            == "cacl-oc-r4.5-prelock-static-audit-v1"
+            and v1.get("status") == "R4_5_PRELOCK_STATIC_AUDIT_PASS"
+            and bool(v1.get("checks"))
+            and all(v1["checks"].values())
+            and predecessor
+            == {
+                "relative_path": str(
+                    v1_path.relative_to(PACKAGE)
+                ).replace("\\", "/"),
+                "bytes": v1_path.stat().st_size,
+                "sha256": sha256(v1_path),
+            }
+        ),
+        "v2_schema_status": (
+            v2.get("schema")
+            == "cacl-oc-r4.5-prelock-static-audit-v2"
+            and v2.get("status") == "R4_5_PRELOCK_STATIC_AUDIT_PASS"
+            and bool(v2.get("checks"))
+            and all(v2["checks"].values())
+        ),
+        "v2_bound_files_current": (
+            len(bound_checks) == 15 and all(bound_checks.values())
+        ),
+        "prior_access_binding_current": (
+            v2.get("prior_access_audit_sha256") == prior["sha256"]
+            and v2.get("metadata_screen_sha256")
+            == prior["screen_sha256"]
+        ),
+        "scientific_ast_checks_all_true": (
+            set(v2.get("scientific_function_ast_checks", {}))
+            == {
+                "hash_order",
+                "exact_feature_group_ids",
+                "deterministic_group_representatives",
+                "group_disjoint_source_splits",
+                "cp_lower",
+                "cp_upper",
+                "direct_actions",
+                "query_actions_masks_and_costs",
+                "certificate",
+                "feasibility_frontier",
+                "tree_model",
+                "selection_key",
+            }
+            and all(
+                v2.get("scientific_function_ast_checks", {}).values()
+            )
+        ),
+    }
+    result = {
+        "checks": checks,
+        "bound_file_checks": bound_checks,
+        "passes": all(checks.values()),
+        "sha256": sha256(v2_path),
+    }
+    if not result["passes"]:
+        failed = [name for name, value in checks.items() if not value]
+        raise RuntimeError(
+            "R4.5 prelock V2 validation failed: " + ", ".join(failed)
+        )
+    return result
+
+
+def validate_r4_2_invalidation_provenance() -> dict[str, Any]:
+    """Prove that R4.2 was locked, then stopped before instance data."""
+
+    lock_path = R4_2 / "receipts" / "R4_2_STAGE_A_LOCAL_LOCK.json"
+    ack_path = R4_2 / "receipts" / "R4_2_STAGE_A_TIMESTAMP_ACK.json"
+    verification_path = (
+        R4_2 / "receipts" / "R4_2_STAGE_A_TIMESTAMP_VERIFICATION.json"
+    )
+    invalidation_path = (
+        R4_2 / "receipts" / "R4_2_STAGE_A_TRANSPORT_INVALIDATION.json"
+    )
+    lock = read_json(lock_path)
+    ack = read_json(ack_path)
+    verification = read_json(verification_path)
+    invalidation = read_json(invalidation_path)
+    lock_hash = sha256(lock_path)
+    ack_hash = sha256(ack_path)
+    ack_checks = _ack_checks(
+        ack,
+        lock_path,
+        schema="cacl-oc-r4.2-stage-a-timestamp-ack-v1",
+        expected_public_count=len(lock.get("public_text_paths", [])),
+        unopened_field="new_instance_data_unopened_at_timestamp",
+    )
+    locked_file_checks = _rehash_locked_files(lock)
+    false_flags = (
+        "instance_data_read_reached",
+        "prepared_census_created",
+        "registered_census_created",
+        "scientific_model_fitted",
+        "source_route_computed",
+        "target_outcome_semantically_decoded",
+        "r4_2_scientific_result_permitted",
+    )
+    checks = {
+        "r4_2_lock_schema_status": (
+            lock.get("schema")
+            == "cacl-oc-r4.2-stage-a-local-lock-v1"
+            and lock.get("status")
+            == "R4_2_STAGE_A_LOCKED_BEFORE_NEW_DATA_ACCESS"
+            and lock.get("new_registered_ids") == [855, 967]
+            and lock.get("new_data_downloaded") is False
+        ),
+        "r4_2_ack_exact": all(ack_checks.values()),
+        "r4_2_locked_files_current": bool(
+            locked_file_checks
+            and all(row["passes"] for row in locked_file_checks.values())
+        ),
+        "r4_2_verification_exact": (
+            verification.get("schema")
+            == "cacl-oc-r4.2-stage-a-verification-v1"
+            and verification.get("status")
+            == "R4_2_STAGE_A_DATA_ACCESS_AUTHORIZED"
+            and verification.get("lock_sha256") == lock_hash
+            and verification.get("ack_sha256") == ack_hash
+            and verification.get("public_commit_sha")
+            == ack.get("public_commit_sha")
+            and verification.get("all_locked_files_current") is True
+            and verification.get(
+                "new_data_access_permitted_after_receipt"
+            )
+            is True
+        ),
+        "r4_2_invalidation_exact": (
+            invalidation.get("schema")
+            == "cacl-oc-r4.2-stage-a-transport-invalidation-v1"
+            and invalidation.get("status")
+            == "R4_2_INVALIDATED_BEFORE_INSTANCE_DATA_ACCESS"
+            and invalidation.get("failure_class")
+            == "transport_implementation"
+            and invalidation.get("dataset_id") == 855
+            and invalidation.get("repair_scope_permitted")
+            == "official UCI 855 archive transport only"
+            and all(invalidation.get(field) is False for field in false_flags)
+        ),
+        "r4_2_invalidation_bindings_exact": (
+            invalidation.get("public_stage_a_commit")
+            == ack.get("public_commit_sha")
+            and invalidation.get("stage_a_lock_sha256") == lock_hash
+        ),
+        "r4_2_data_outputs_absent": (
+            not (R4_2 / "prepared_census").exists()
+            and not (R4_2 / "registered_census").exists()
+        ),
+    }
+    result = {
+        "checks": checks,
+        "ack_checks": ack_checks,
+        "locked_file_checks": locked_file_checks,
+        "passes": all(checks.values()),
+        "lock_sha256": lock_hash,
+        "ack_sha256": ack_hash,
+        "public_commit_sha": str(ack.get("public_commit_sha", "")),
+    }
+    if not result["passes"]:
+        failed = [name for name, value in checks.items() if not value]
+        raise RuntimeError(
+            "R4.2 invalidation provenance failed: " + ", ".join(failed)
+        )
+    return result
+
+
+def validate_r4_3_invalidation_provenance() -> dict[str, Any]:
+    """Prove R4.3 stopped on UCI855 before preparation and UCI967."""
+
+    lock_path = R4_3 / "receipts" / "R4_3_STAGE_A_LOCAL_LOCK.json"
+    ack_path = R4_3 / "receipts" / "R4_3_STAGE_A_TIMESTAMP_ACK.json"
+    verification_path = (
+        R4_3 / "receipts" / "R4_3_STAGE_A_TIMESTAMP_VERIFICATION.json"
+    )
+    invalidation_path = (
+        R4_3
+        / "receipts"
+        / "R4_3_STAGE_A_DATA_ELIGIBILITY_INVALIDATION.json"
+    )
+    lock = read_json(lock_path)
+    ack = read_json(ack_path)
+    verification = read_json(verification_path)
+    invalidation = read_json(invalidation_path)
+    lock_hash = sha256(lock_path)
+    ack_hash = sha256(ack_path)
+    verification_hash = sha256(verification_path)
+    ack_checks = _ack_checks(
+        ack,
+        lock_path,
+        schema="cacl-oc-r4.3-stage-a-timestamp-ack-v1",
+        expected_public_count=len(lock.get("public_text_paths", [])),
+        unopened_field="new_instance_data_unopened_at_timestamp",
+    )
+    locked_file_checks = _rehash_locked_files(lock)
+    checks = {
+        "r4_3_lock_schema_status": (
+            lock.get("schema")
+            == "cacl-oc-r4.3-stage-a-local-lock-v1"
+            and lock.get("status")
+            == "R4_3_STAGE_A_LOCKED_BEFORE_NEW_DATA_ACCESS"
+            and lock.get("new_registered_ids") == [855, 967]
+            and lock.get("new_data_downloaded") is False
+        ),
+        "r4_3_ack_exact": all(ack_checks.values()),
+        "r4_3_locked_files_current": bool(
+            locked_file_checks
+            and all(row["passes"] for row in locked_file_checks.values())
+        ),
+        "r4_3_verification_exact": (
+            verification.get("schema")
+            == "cacl-oc-r4.3-stage-a-verification-v1"
+            and verification.get("status")
+            == "R4_3_STAGE_A_DATA_ACCESS_AUTHORIZED"
+            and verification.get("lock_sha256") == lock_hash
+            and verification.get("ack_sha256") == ack_hash
+            and verification.get("public_commit_sha")
+            == ack.get("public_commit_sha")
+            and verification.get("all_locked_files_current") is True
+            and verification.get(
+                "new_data_access_permitted_after_receipt"
+            )
+            is True
+        ),
+        "r4_3_invalidation_exact": (
+            invalidation.get("schema")
+            == "cacl-oc-r4.3-stage-a-data-eligibility-invalidation-v1"
+            and invalidation.get("status")
+            == "R4_3_INVALIDATED_AFTER_UCI855_ACCESS_BEFORE_PREPARATION"
+            and invalidation.get("failure_class")
+            == "pre_registered_data_eligibility"
+            and invalidation.get("dataset_id") == 855
+            and invalidation.get("instance_data_read_reached") is True
+            and invalidation.get("target_labels_read_by_preparation_layer")
+            is True
+            and invalidation.get("uci967_instance_data_read_reached")
+            is False
+            and invalidation.get("scientific_engine_target_outcome_opened")
+            is False
+            and invalidation.get("prepared_census_created") is False
+            and invalidation.get("registered_census_created") is False
+            and invalidation.get("preparation_batch_created") is False
+            and invalidation.get("scientific_model_fitted") is False
+            and invalidation.get("source_route_computed") is False
+            and invalidation.get("target_action_computed") is False
+            and invalidation.get("r4_3_retry_permitted") is False
+            and invalidation.get("r4_3_scientific_result_permitted")
+            is False
+        ),
+        "r4_3_invalidation_bindings_exact": (
+            invalidation.get("public_stage_a_commit")
+            == ack.get("public_commit_sha")
+            and invalidation.get("stage_a_lock_sha256") == lock_hash
+            and invalidation.get("stage_a_ack_sha256") == ack_hash
+            and invalidation.get("stage_a_verification_sha256")
+            == verification_hash
+        ),
+        "r4_3_data_outputs_absent": (
+            not (R4_3 / "prepared_census").exists()
+            and not (R4_3 / "registered_census").exists()
+            and not (
+                R4_3 / "receipts" / "R4_3_NEW_DATA_PREPARATION.json"
+            ).exists()
+        ),
+    }
+    result = {
+        "checks": checks,
+        "ack_checks": ack_checks,
+        "locked_file_checks": locked_file_checks,
+        "passes": all(checks.values()),
+        "lock_sha256": lock_hash,
+        "ack_sha256": ack_hash,
+        "public_commit_sha": str(ack.get("public_commit_sha", "")),
+    }
+    if not result["passes"]:
+        failed = [name for name, value in checks.items() if not value]
+        raise RuntimeError(
+            "R4.3 invalidation provenance failed: " + ", ".join(failed)
+        )
+    return result
+
+
+def validate_r4_4_invalidation_provenance() -> dict[str, Any]:
+    """Prove R4.4 consumed 367/891/942 but never requested UCI967."""
+
+    lock_path = R4_4 / "receipts" / "R4_4_STAGE_A_LOCAL_LOCK.json"
+    ack_path = R4_4 / "receipts" / "R4_4_STAGE_A_TIMESTAMP_ACK.json"
+    verification_path = (
+        R4_4 / "receipts" / "R4_4_STAGE_A_TIMESTAMP_VERIFICATION.json"
+    )
+    invalidation_path = (
+        R4_4
+        / "receipts"
+        / "R4_4_STAGE_A_DATA_ELIGIBILITY_INVALIDATION.json"
+    )
+    lock = read_json(lock_path)
+    ack = read_json(ack_path)
+    verification = read_json(verification_path)
+    invalidation = read_json(invalidation_path)
+    lock_hash = sha256(lock_path)
+    ack_hash = sha256(ack_path)
+    verification_hash = sha256(verification_path)
+    ack_checks = _ack_checks(
+        ack,
+        lock_path,
+        schema="cacl-oc-r4.4-stage-a-timestamp-ack-v1",
+        expected_public_count=len(lock.get("public_text_paths", [])),
+        unopened_field="new_instance_data_unopened_at_timestamp",
+    )
+    locked_file_checks = _rehash_locked_files(lock)
+    expected_read_map = {
+        "367": True,
+        "891": True,
+        "942": True,
+        "967": False,
+    }
+    checks = {
+        "r4_4_lock_schema_status": (
+            lock.get("schema")
+            == "cacl-oc-r4.4-stage-a-local-lock-v1"
+            and lock.get("status")
+            == "R4_4_STAGE_A_LOCKED_BEFORE_NEW_DATA_ACCESS"
+            and lock.get("new_registered_ids") == [367, 891, 942, 967]
+            and lock.get("new_data_downloaded") is False
+        ),
+        "r4_4_ack_exact": all(ack_checks.values()),
+        "r4_4_locked_files_current": bool(
+            locked_file_checks
+            and all(row["passes"] for row in locked_file_checks.values())
+        ),
+        "r4_4_verification_exact": (
+            verification.get("schema")
+            == "cacl-oc-r4.4-stage-a-verification-v1"
+            and verification.get("status")
+            == "R4_4_STAGE_A_DATA_ACCESS_AUTHORIZED"
+            and verification.get("lock_sha256") == lock_hash
+            and verification.get("ack_sha256") == ack_hash
+            and verification.get("public_commit_sha")
+            == ack.get("public_commit_sha")
+            and verification.get("all_locked_files_current") is True
+            and verification.get(
+                "new_data_access_permitted_after_receipt"
+            )
+            is True
+        ),
+        "r4_4_invalidation_exact": (
+            invalidation.get("schema")
+            == "cacl-oc-r4.4-stage-a-data-eligibility-invalidation-v1"
+            and invalidation.get("status")
+            == (
+                "R4_4_INVALIDATED_AFTER_UCI942_ACCESS_BEFORE_"
+                "PREPARATION_PERSISTENCE"
+            )
+            and invalidation.get("failure_class")
+            == "pre_registered_exact_target_taxonomy_mismatch"
+            and invalidation.get("failure_dataset_id") == 942
+            and invalidation.get(
+                "instance_data_read_reached_by_dataset"
+            )
+            == expected_read_map
+            and invalidation.get(
+                "target_labels_read_by_preparation_layer_by_dataset"
+            )
+            == expected_read_map
+            and invalidation.get("scientific_engine_target_outcome_opened")
+            is False
+            and invalidation.get("prepared_census_created") is False
+            and invalidation.get("registered_census_created") is False
+            and invalidation.get("preparation_batch_created") is False
+            and invalidation.get("scientific_model_fitted") is False
+            and invalidation.get("source_route_computed") is False
+            and invalidation.get("target_action_computed") is False
+            and invalidation.get("target_certificate_computed") is False
+            and invalidation.get("r4_4_retry_permitted") is False
+            and invalidation.get("r4_4_scientific_result_permitted")
+            is False
+            and invalidation.get(
+                "untouched_dataset_retained_for_future_registration"
+            )
+            == 967
+        ),
+        "r4_4_invalidation_bindings_exact": (
+            invalidation.get("public_stage_a_commit")
+            == ack.get("public_commit_sha")
+            and invalidation.get("stage_a_lock_sha256") == lock_hash
+            and invalidation.get("stage_a_ack_sha256") == ack_hash
+            and invalidation.get("stage_a_verification_sha256")
+            == verification_hash
+        ),
+        "r4_4_data_outputs_absent": (
+            not (R4_4 / "prepared_census").exists()
+            and not (R4_4 / "registered_census").exists()
+            and not (
+                R4_4 / "receipts" / "R4_4_NEW_DATA_PREPARATION.json"
+            ).exists()
+        ),
+    }
+    result = {
+        "checks": checks,
+        "ack_checks": ack_checks,
+        "locked_file_checks": locked_file_checks,
+        "passes": all(checks.values()),
+        "lock_sha256": lock_hash,
+        "ack_sha256": ack_hash,
+        "public_commit_sha": str(ack.get("public_commit_sha", "")),
+    }
+    if not result["passes"]:
+        failed = [name for name, value in checks.items() if not value]
+        raise RuntimeError(
+            "R4.4 invalidation provenance failed: " + ", ".join(failed)
+        )
+    return result
+
+
+def validate_stage_a_ack_and_lock() -> dict[str, Any]:
+    r4_2 = validate_r4_2_invalidation_provenance()
+    r4_3 = validate_r4_3_invalidation_provenance()
+    r4_4 = validate_r4_4_invalidation_provenance()
+    prior_access = validate_prior_access_audit()
+    prelock = validate_prelock_static_audit()
+    lock_path = RECEIPTS / "R4_5_STAGE_A_LOCAL_LOCK.json"
+    ack_path = RECEIPTS / "R4_5_STAGE_A_TIMESTAMP_ACK.json"
+    if not lock_path.is_file() or not ack_path.is_file():
+        raise RuntimeError("R4.5 Stage-A lock or ACK is absent")
+    lock = read_json(lock_path)
+    ack = read_json(ack_path)
+    expected_public_count = len(lock.get("public_text_paths", []))
+    checks = _ack_checks(
+        ack,
+        lock_path,
+        schema="cacl-oc-r4.5-stage-a-timestamp-ack-v1",
         expected_public_count=expected_public_count,
         unopened_field="new_instance_data_unopened_at_timestamp",
     )
