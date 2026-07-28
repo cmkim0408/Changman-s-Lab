@@ -1,0 +1,15 @@
+{
+  "schema": "cacl-oc-r4-pre-reveal-invalidation-v1",
+  "status": "INVALIDATED_BEFORE_TARGET_REVEAL",
+  "public_commit_sha": "db218a15d6db62d72741e94a0652b57c84d1f293",
+  "public_timestamp_utc": "2026-07-27T21:25:04Z",
+  "public_url": "https://github.com/cmkim0408/Changman-s-Lab/commit/db218a15d6db62d72741e94a0652b57c84d1f293",
+  "target_outcomes_evaluated": false,
+  "reasons": [
+    "evaluator did not independently revalidate the complete locked-file hash chain",
+    "target-outcome archives were not explicitly bound to R3 preparation hashes",
+    "freeze outputs were not write-once",
+    "full-matrix target imputation permitted only a path-cost proxy, not a query-isolated execution claim"
+  ],
+  "successor": "CACL-OC R4.1"
+}
