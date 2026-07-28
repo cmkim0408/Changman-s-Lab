@@ -1,0 +1,187 @@
+{
+  "amendment_files": {
+    "31_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT_V2/AMENDMENT_V2_PROTOCOL.md": {
+      "bytes": 2199,
+      "sha256": "895c0ed984b695331a77eaa4a4edda2433846ae3229df54f4ae3443558417f52"
+    },
+    "31_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT_V2/code/r4_5_1_amendment_v2.py": {
+      "bytes": 30636,
+      "sha256": "a2303f01a7569974daea77b74b1635faaade6f2905526ac134029553a7374455"
+    }
+  },
+  "authorized_artifact_checks": {
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/PREPARATION_RECEIPT.json": {
+      "bound_by_stage_b_lock": true,
+      "bytes_match": true,
+      "exists": true,
+      "passes": true,
+      "sha256_match": true
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/raw_official.csv": {
+      "bound_by_stage_b_lock": true,
+      "bytes_match": true,
+      "exists": true,
+      "passes": true,
+      "sha256_match": true
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/source.npz": {
+      "bound_by_stage_b_lock": true,
+      "bytes_match": true,
+      "exists": true,
+      "passes": true,
+      "sha256_match": true
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/target_features.npz": {
+      "bound_by_stage_b_lock": true,
+      "bytes_match": true,
+      "exists": true,
+      "passes": true,
+      "sha256_match": true
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/target_outcomes.npz": {
+      "bound_by_stage_b_lock": true,
+      "bytes_match": true,
+      "exists": true,
+      "passes": true,
+      "sha256_match": true
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/FROZEN_POLICY.joblib": {
+      "bound_by_stage_b_lock": true,
+      "bytes_match": true,
+      "exists": true,
+      "passes": true,
+      "sha256_match": true
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/SEALED_TARGET_ACTIONS.npz": {
+      "bound_by_stage_b_lock": true,
+      "bytes_match": true,
+      "exists": true,
+      "passes": true,
+      "sha256_match": true
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/SOURCE_FREEZE_RECEIPT.json": {
+      "bound_by_stage_b_lock": true,
+      "bytes_match": true,
+      "exists": true,
+      "passes": true,
+      "sha256_match": true
+    }
+  },
+  "authorized_post_stage_a_paths": [
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/PREPARATION_RECEIPT.json",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/raw_official.csv",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/source.npz",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/target_features.npz",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/target_outcomes.npz",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/FROZEN_POLICY.joblib",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/SEALED_TARGET_ACTIONS.npz",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/SOURCE_FREEZE_RECEIPT.json"
+  ],
+  "claim_boundary": "Target-outcome-uninformed computational confirmation under a transparently amended infrastructure validator; not an unamended run, independent custody, causal, clinical, wet-lab, prospective physical acquisition, or field-safety claim.",
+  "critical_original_files": {
+    "29_CACL_OC_UCI_EXPANDED_R4_5/R4_5_PROTOCOL.md": {
+      "bytes": 3296,
+      "sha256": "e783a9ca9c137e0279931aca721ec6e612902685c0e85e43645f350f1639d20f"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/audit_r4_5_final.py": {
+      "bytes": 92090,
+      "sha256": "98e215e3cc661773acaf423f9dc125968f7295c862085426133523705e9dfa61"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/cacl_oc_engine.py": {
+      "bytes": 44839,
+      "sha256": "954370ab0c7861e621b68e4c70fcfc0717b37887659b05915decc95976eeb5b8"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/integrity.py": {
+      "bytes": 61145,
+      "sha256": "5a9317b2f05af39d5aa670867652be8fdc087cd10846448ade016341f62fcb06"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/code/verify_r4_5_timestamp.py": {
+      "bytes": 1278,
+      "sha256": "a05268e0bc00a051ac33b97a42821ff4b44f43d5c856d04cc80d8ebe229a89f8"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/config/r4_5_contract.json": {
+      "bytes": 3734,
+      "sha256": "bece0d94dda0bcabc04d87d0e1da6c1b7f2a5a242877ed584a0f0f41a81fb74a"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_EXTERNAL_TIMESTAMP_ACK.json": {
+      "bytes": 21827,
+      "sha256": "ccc19b1e0b17a580436d9d59739c568df26aec09b71a3046829d5bc91c85373f"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_LOCAL_LOCK.json": {
+      "bytes": 21764,
+      "sha256": "13354b676643e3ba826635d90b6034ccf74d3fea4491ca2602755caf309c184e"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_LOCAL_LOCK.json": {
+      "bytes": 11935,
+      "sha256": "30a0c0b25edeb5f5bc981a0ce7795628fe6e5ffd347f24ce86e2d68f7fe7df1d"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_TIMESTAMP_ACK.json": {
+      "bytes": 15609,
+      "sha256": "795be761ad4094728b20261dc298b21d9ace162393ed1b79a579e801f73c0792"
+    },
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_TIMESTAMP_VERIFICATION.json": {
+      "bytes": 429,
+      "sha256": "6af15bec66c4590d88ff8e28af610ec456bd78e44eaa595c83c6c567b174f3d6"
+    }
+  },
+  "current_candidate_paths": [
+    "21_CACL_VPC_UCI_CLOSED_BATCH/registry_snapshot/metadata/uci_967.json",
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_967.json",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/PREPARATION_RECEIPT.json",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/raw_official.csv",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/source.npz",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/target_features.npz",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/prepared_census/uci_967/target_outcomes.npz",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/FROZEN_POLICY.joblib",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/SEALED_TARGET_ACTIONS.npz",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/registered_census/uci_967/SOURCE_FREEZE_RECEIPT.json"
+  ],
+  "historical_candidate_paths": [
+    "21_CACL_VPC_UCI_CLOSED_BATCH/registry_snapshot/metadata/uci_967.json",
+    "22_CACL_VPC_UCI_BINARY_VERIFIED_BATCH/registry_snapshot/metadata/uci_967.json"
+  ],
+  "patched_stage_b_all_pass": true,
+  "patched_stage_b_check_count": 34,
+  "patched_stage_b_locked_file_count": 82,
+  "patched_stage_b_outcome_binding_count": 4,
+  "pre_reveal_outputs_absent": true,
+  "public_text_paths": [
+    "31_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT_V2/AMENDMENT_V2_PROTOCOL.md",
+    "31_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT_V2/code/r4_5_1_amendment_v2.py",
+    "30_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT/AMENDMENT_PROTOCOL.md",
+    "30_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT/code/r4_5_1_amendment.py",
+    "30_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT/receipts/R4_5_1_AMENDMENT_LOCAL_LOCK.json",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_LOCAL_LOCK.json",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_TIMESTAMP_ACK.json",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_STAGE_A_TIMESTAMP_VERIFICATION.json",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_LOCAL_LOCK.json",
+    "29_CACL_OC_UCI_EXPANDED_R4_5/receipts/R4_5_EXTERNAL_TIMESTAMP_ACK.json",
+    "31_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT_V2/receipts/R4_5_1_AMENDMENT_V2_LOCAL_LOCK.json"
+  ],
+  "registered_failure_fingerprint": "R4.5 prior-access audit validation failed: current_prelock_path_census_exact",
+  "rejected_draft_files": {
+    "30_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT/AMENDMENT_PROTOCOL.md": {
+      "bytes": 2726,
+      "sha256": "d1649aa5f02a07e0b4ae971a91fe42369f4c6ea0904c6f759b9491a7fde5ecf0"
+    },
+    "30_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT/code/r4_5_1_amendment.py": {
+      "bytes": 25789,
+      "sha256": "a47a0add81e045a11eec1c4b16eb10caa283ffea188b837363549b06de2be7a1"
+    },
+    "30_CACL_OC_UCI_EXPANDED_R4_5_1_AMENDMENT/receipts/R4_5_1_AMENDMENT_LOCAL_LOCK.json": {
+      "bytes": 7851,
+      "sha256": "10404cdf2c0f80e86ffb93c316675dfe3495fa4fb89c888cfa8cf94b20ab9e45"
+    }
+  },
+  "rejected_draft_lock_sha256": "10404cdf2c0f80e86ffb93c316675dfe3495fa4fb89c888cfa8cf94b20ab9e45",
+  "rejected_draft_used_for_authorization": false,
+  "schema": "cacl-oc-r4.5.1-amendment-v2-lock-v1",
+  "scientific_change": false,
+  "stage_a_public_commit_sha": "170168d5b81641d9d85fa73d6cd597e4ad97b962",
+  "stage_a_timestamp_utc": "2026-07-28T00:00:25Z",
+  "stage_b_public_commit_sha": "ef22eb99bebd86ec10b87006f35b0f779abdede6",
+  "stage_b_timestamp_utc": "2026-07-28T00:14:53Z",
+  "status": "R4_5_1_AMENDMENT_V2_LOCKED_PRE_REVEAL",
+  "target_outcomes_semantically_opened": false,
+  "write_once": true
+}
