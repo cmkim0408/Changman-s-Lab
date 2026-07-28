@@ -1,0 +1,112 @@
+{
+  "ack_created_by_network_fetch": true,
+  "commit_api_url": "https://api.github.com/repos/cmkim0408/Changman-s-Lab/commits/5a188bce5dce6d4d1562aff47a9883c167231987",
+  "local_lock_sha256": "142484054b7350cdab2cbee079d176f4e908ca7651ff374414a89f75aa2b306b",
+  "new_instance_data_unopened_at_timestamp": true,
+  "public_commit_sha": "5a188bce5dce6d4d1562aff47a9883c167231987",
+  "public_timestamp_utc": "2026-07-27T22:36:56Z",
+  "public_url": "https://github.com/cmkim0408/Changman-s-Lab/commit/5a188bce5dce6d4d1562aff47a9883c167231987",
+  "remote_file_count": 19,
+  "remote_files_exactly_match_local": true,
+  "remote_lock_sha256": "142484054b7350cdab2cbee079d176f4e908ca7651ff374414a89f75aa2b306b",
+  "remote_path_prefix": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact",
+  "schema": "cacl-oc-r4.3-stage-a-timestamp-ack-v1",
+  "target_outcomes_semantically_decoded_by_this_verifier": false,
+  "verified_remote_files": {
+    "26_CACL_OC_UCI_EXPANDED_R4_2/R4_2_TRANSPORT_INVALIDATION.md": {
+      "bytes": 1135,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/26_CACL_OC_UCI_EXPANDED_R4_2/R4_2_TRANSPORT_INVALIDATION.md",
+      "sha256": "b34ace13bea751025b10ddce9946ef2cb9e4b22dbcb30c96d66bea2fd9fc6aab"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_LOCAL_LOCK.json": {
+      "bytes": 3411,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_LOCAL_LOCK.json",
+      "sha256": "d9a6a4190ca18ade2602b2b701b480e98279d1d05921d19710534827de7d8fc6"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TIMESTAMP_ACK.json": {
+      "bytes": 5575,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TIMESTAMP_ACK.json",
+      "sha256": "37b757ea3f0ad297fceaa2ad90d3d2fab90c75e1486206d2042e87997fb8d14e"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TIMESTAMP_VERIFICATION.json": {
+      "bytes": 429,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TIMESTAMP_VERIFICATION.json",
+      "sha256": "fcd29abeafa1d0c94ee3acdcb2c4c26cb59c1d83ac625cb82e59e49a501f4ef7"
+    },
+    "26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TRANSPORT_INVALIDATION.json": {
+      "bytes": 887,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/26_CACL_OC_UCI_EXPANDED_R4_2/receipts/R4_2_STAGE_A_TRANSPORT_INVALIDATION.json",
+      "sha256": "324abdc6e62d98821d4a8833f276dc1e2682d6f40e3c1d1f4d854c906857cecc"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/R4_3_PROTOCOL.md": {
+      "bytes": 11307,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/R4_3_PROTOCOL.md",
+      "sha256": "ed2209298c7f858bcb5738f880407fbb25334a721377c3c72a2074796e1c7023"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/R4_3_STAGE_A_REGISTRATION.md": {
+      "bytes": 4394,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/R4_3_STAGE_A_REGISTRATION.md",
+      "sha256": "2c0602f6fa0e714d3201ea4a5be8763430538f9413e39cf24d79436f164a29c5"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/audit_r4_3_final.py": {
+      "bytes": 78588,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/audit_r4_3_final.py",
+      "sha256": "4d1dbc2402f1ad2041f69a447abfab342d8e09e151d9e4f0cfc3b114f7cf6650"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/cacl_oc_engine.py": {
+      "bytes": 44841,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/cacl_oc_engine.py",
+      "sha256": "fcc733c1ac80460535a01fa1c1bb4da8540b7c004b98eff10045aa448a48f441"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/create_r4_3_public_ack.py": {
+      "bytes": 7033,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/create_r4_3_public_ack.py",
+      "sha256": "e7c88af681181a612730497c03ac5a4bfad9cc84790b8e5346a572dcbf4316c1"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/freeze_r4_3_lock.py": {
+      "bytes": 6081,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/freeze_r4_3_lock.py",
+      "sha256": "d492fab1265f38ab52595229323649d40eb4764a18efe3d2ad80d949dc21d9b0"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/freeze_r4_3_stage_a_lock.py": {
+      "bytes": 1723,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/freeze_r4_3_stage_a_lock.py",
+      "sha256": "5a4f45762d0e57f6f257eee07f6b30fe0a0b127b5170bf2f74dee40cdb4afe19"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/integrity.py": {
+      "bytes": 28992,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/integrity.py",
+      "sha256": "0fb915b86c2f2e09a4410dce179a09bf325f54622a57d64ed99da86d331a2a05"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/prepare_r4_3_new_data.py": {
+      "bytes": 20893,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/prepare_r4_3_new_data.py",
+      "sha256": "4e4e027e771d33d0f10f31e7cced3e4f723dc43fb93f9a6ce6d3367016916f18"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/verify_r4_3_stage_a_timestamp.py": {
+      "bytes": 984,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/verify_r4_3_stage_a_timestamp.py",
+      "sha256": "4d714206f78ca3496ca27aa64a9b3bc3c93da5c77a72cafe6adc63c932260e32"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/code/verify_r4_3_timestamp.py": {
+      "bytes": 1278,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/code/verify_r4_3_timestamp.py",
+      "sha256": "662051bd9a63a7814e5999017d5ae63eedae21ce9825c2a3b56a4b2a0e9cb66f"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/config/r4_3_contract.json": {
+      "bytes": 2905,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/config/r4_3_contract.json",
+      "sha256": "78f16c770793d3dfcdff2bcc200a17e3a1e81e132e5f211ad03665a3c339d538"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_LOCAL_LOCK.json": {
+      "bytes": 4755,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/receipts/R4_3_STAGE_A_LOCAL_LOCK.json",
+      "sha256": "142484054b7350cdab2cbee079d176f4e908ca7651ff374414a89f75aa2b306b"
+    },
+    "27_CACL_OC_UCI_EXPANDED_R4_3/requirements-lock.txt": {
+      "bytes": 92,
+      "remote_path": "cacl-vpc-preregistration/2026-07-28/r4_3_transport_repair/stage_a_exact/27_CACL_OC_UCI_EXPANDED_R4_3/requirements-lock.txt",
+      "sha256": "7bb981c905872b33ef14b2321acb798ed06f65e3accd80f5afcdc0929f6b1043"
+    }
+  }
+}
