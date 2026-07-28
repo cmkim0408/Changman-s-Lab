@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "source.npz": {
+      "bytes": 1255102,
+      "sha256": "10457719b40a3edf1b7003a998013233af07fb9a2304e5dca0f8458e27113cfa"
+    },
+    "target_features.npz": {
+      "bytes": 674924,
+      "sha256": "d9d73dd31504d0495d84d0c2c0f1225ef7d0068f6876b883708a9b129978f59e"
+    },
+    "target_outcomes.npz": {
+      "bytes": 6678,
+      "sha256": "7bfb44479e949a7dfee94bb6eb7bf7faabbfb68da6be437aa76d06ee8d9105fb"
+    }
+  },
+  "missing_fraction": 0.0,
+  "name": "Musk (Version 2)",
+  "predictors": 166,
+  "rows": 6598,
+  "source_units": 4288,
+  "status": "R3_SOURCE_TARGET_PREPARED",
+  "target_cardinality": 2,
+  "target_mapping": {
+    "0.0": 0,
+    "1.0": 1
+  },
+  "target_units": 2310,
+  "uci_id": 75
+}
