@@ -1,0 +1,109 @@
+{
+  "confirmatory_pass_still_possible": false,
+  "datasets": [
+    {
+      "best_compression_candidate": {
+        "average_compression": 89.35257214554579,
+        "budget": 4
+      },
+      "best_harm_candidate": {
+        "budget": 8,
+        "harm_ucb": 0.43456836014129785
+      },
+      "best_relative_candidate": {
+        "budget": 8,
+        "point_value_fraction": 0.44696969696969696,
+        "relative_lcb": -0.07190623635858921
+      },
+      "fixed_coverage_harm_pair_empirically_feasible": false,
+      "freeze_receipt_sha256": "41e47a44d405c5f8a706b32b306d0577871b84c15f22ac15ccf51df1f1af2336",
+      "frozen_policy_sha256": "f3b3ee182baf8fda4216d7a4783eec1d4d35e7e5d763a4abad0acbfa8dc203a2",
+      "necessary_opportunity_rate_for_fixed_gates": 0.16000000000000003,
+      "route": "ABSTAIN",
+      "source_audit_opportunities": 193,
+      "source_audit_opportunity_rate": 0.14996114996114995,
+      "source_audit_units": 1287,
+      "source_features": 166,
+      "source_opportunity_rate": 0.15391791044776118,
+      "source_units": 4288,
+      "static_action": 0,
+      "target_outcomes_opened_flag": false,
+      "target_verdict_exists": false,
+      "uci_id": 75
+    },
+    {
+      "best_compression_candidate": {
+        "average_compression": 16.76081886499093,
+        "budget": 2
+      },
+      "best_harm_candidate": {
+        "budget": 8,
+        "harm_ucb": 0.30831427344201
+      },
+      "best_relative_candidate": {
+        "budget": 8,
+        "point_value_fraction": 0.9546279491833032,
+        "relative_lcb": -0.0005750575946540989
+      },
+      "fixed_coverage_harm_pair_empirically_feasible": true,
+      "freeze_receipt_sha256": "9969125e2dd6245cc7f389a2e6a78d4c1f4b41e3025e6e69e965d915e89ea5f2",
+      "frozen_policy_sha256": "8dedd7ced814f67ee57aadf289ead19f7fb03e53a65a68e74992c3c94aabf2bd",
+      "necessary_opportunity_rate_for_fixed_gates": 0.16000000000000003,
+      "route": "ABSTAIN",
+      "source_audit_opportunities": 983,
+      "source_audit_opportunity_rate": 0.4559369202226345,
+      "source_audit_units": 2156,
+      "source_features": 30,
+      "source_opportunity_rate": 0.44133611691022967,
+      "source_units": 7185,
+      "static_action": 1,
+      "target_outcomes_opened_flag": false,
+      "target_verdict_exists": false,
+      "uci_id": 327
+    },
+    {
+      "best_compression_candidate": {
+        "average_compression": null,
+        "budget": 2
+      },
+      "best_harm_candidate": {
+        "budget": 2,
+        "harm_ucb": 1.0
+      },
+      "best_relative_candidate": {
+        "budget": 2,
+        "point_value_fraction": null,
+        "relative_lcb": -0.008384598610832591
+      },
+      "fixed_coverage_harm_pair_empirically_feasible": false,
+      "freeze_receipt_sha256": "9bba542b72eb645ba1b04e6c993bfb8c72c6ddebfd7c5d8ab74bddd0d48a1b2e",
+      "frozen_policy_sha256": "eb0fcfe4f03bcfa6e057e07c12efe952ef927ff367e5d7d512829c3b6b473ef2",
+      "necessary_opportunity_rate_for_fixed_gates": 0.16000000000000003,
+      "route": "ABSTAIN",
+      "source_audit_opportunities": 47,
+      "source_audit_opportunity_rate": 0.035338345864661655,
+      "source_audit_units": 1330,
+      "source_features": 95,
+      "source_opportunity_rate": 0.034070397111913356,
+      "source_units": 4432,
+      "static_action": 0,
+      "target_outcomes_opened_flag": false,
+      "target_verdict_exists": false,
+      "uci_id": 572
+    }
+  ],
+  "fixed_gate_necessary_condition": "opportunity_rate >= coverage_floor*(1-harm_cap)",
+  "fixed_gate_necessary_threshold": 0.16000000000000003,
+  "interpretation": "R3 cannot pass because no registered source task authorized COMPRESS. On two tasks, the fixed absolute coverage/harm pair is itself empirically infeasible; no threshold was changed and target outcomes were not evaluated.",
+  "minimum_source_compress": 2,
+  "registered_denominator": [
+    75,
+    327,
+    572
+  ],
+  "registered_denominator_retained": true,
+  "schema": "cacl-vpc-r3-source-stop-audit-v1",
+  "source_compress_count": 0,
+  "status": "STRUCTURAL_FAIL_TARGET_UNOPENED",
+  "target_outcomes_remain_unopened_for_model_evaluation": true
+}
