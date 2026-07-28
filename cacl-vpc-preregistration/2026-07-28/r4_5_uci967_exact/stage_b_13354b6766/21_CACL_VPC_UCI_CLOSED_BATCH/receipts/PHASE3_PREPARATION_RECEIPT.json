@@ -1,0 +1,81 @@
+{
+  "datasets": [
+    {
+      "failure_reasons": [
+        "target_cardinality_6"
+      ],
+      "missing_fraction": 0.0,
+      "name": null,
+      "predictors": 36,
+      "replacement_permitted": false,
+      "rows": 6435,
+      "status": "EXTERNAL_FAIL",
+      "target_cardinality": 6,
+      "uci_id": 146
+    },
+    {
+      "failure_reasons": [
+        "target_cardinality_7"
+      ],
+      "missing_fraction": 0.0,
+      "name": null,
+      "predictors": 54,
+      "replacement_permitted": false,
+      "rows": 581012,
+      "status": "EXTERNAL_FAIL",
+      "target_cardinality": 7,
+      "uci_id": 31
+    },
+    {
+      "failure_reasons": [
+        "target_cardinality_10"
+      ],
+      "missing_fraction": 0.0,
+      "name": null,
+      "predictors": 64,
+      "replacement_permitted": false,
+      "rows": 5620,
+      "status": "EXTERNAL_FAIL",
+      "target_cardinality": 10,
+      "uci_id": 80
+    },
+    {
+      "artifacts": {
+        "source.npz": {
+          "bytes": 8621680,
+          "sha256": "dd560aad36713f89712cbd9fcb8d135898d965606cd5d8f09184ea2dfb551a19"
+        },
+        "target_features.npz": {
+          "bytes": 4647800,
+          "sha256": "33a4869b1b5ee62118ce056369f44a6118c4989bf4cc550fc6d501913766e398"
+        },
+        "target_outcomes.npz": {
+          "bytes": 44157,
+          "sha256": "6479533544843fea5bd39112cca6713c5e6615d5c16efaa38fc424b58dccfffd"
+        }
+      },
+      "license_basis": "UCI repository dataset page / donation policy CC BY 4.0",
+      "missing_fraction": 0.014646309801245868,
+      "name": null,
+      "predictors": 65,
+      "replacement_permitted": false,
+      "rows": 43405,
+      "source_units": 28213,
+      "status": "PREPARED_SOURCE_TARGET_SEALED",
+      "target_cardinality": 2,
+      "target_mapping": {
+        "0": 0,
+        "1": 1
+      },
+      "target_units": 15192,
+      "uci_id": 365
+    }
+  ],
+  "external_fail_count": 3,
+  "preparation_code_sha256": "c179f2a93842b2bc726e1f9cd5c553d89f16af9a22e761a41b818a20a1a8b067",
+  "prepared_count": 1,
+  "registered_denominator": 4,
+  "schema": "cacl-vpc-uci-registered-batch-preparation-v1",
+  "selection_receipt_sha256": "1cea4be5a98866b680a33136212585692bc130898bf7e258f950b05ab18202a8",
+  "status": "REGISTERED_BATCH_PREPARATION_COMPLETE"
+}
